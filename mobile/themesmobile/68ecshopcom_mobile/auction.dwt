@@ -1,0 +1,182 @@
+<!DOCTYPE html >
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<title>{$page_title}</title>
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+<link rel="stylesheet" type="text/css" href="themesmobile/68ecshopcom_mobile/css/public.css"/>
+<link rel="stylesheet" href="themesmobile/68ecshopcom_mobile/css/auction_goods.css">
+<script type="text/javascript" src="themesmobile/68ecshopcom_mobile/js/jquery.js"></script>
+{insert_scripts files='jquery.json.js,transport.js'}
+{* 包含脚本文件 *}
+{insert_scripts files='common.js,lefttime.js'}
+<script type="text/javascript">
+  {foreach from=$lang.js_languages item=item key=key}
+    var {$key} = "{$item}";
+  {/foreach}
+</script>
+</head>
+<body>
+<div class="tab_nav">
+  <div class="header">
+    <div class="h-left"><a class="sb-back" href="javascript:history.back(-1)" title="返回"></a></div>
+    <div class="h-mid">拍卖详情</div>
+    <div class="h-right">
+      <aside class="top_bar">
+        <div onClick="show_menu();$('#close_btn').addClass('hid');" id="show_more"><a href="javascript:;"></a> </div>
+      </aside>
+    </div>
+  </div>
+  <!-- #BeginLibraryItem "/library/up_menu.lbi" --><!-- #EndLibraryItem --> <!--弹出菜单--> 
+</div>
+<section class="innercontent">
+  <div id="product-intro">
+    <div class="p-img">
+    	<a href="{$auction_goods.url}" title="{$auction.goods_name|escape:html}"> <img src="{$auction_goods.goods_img}" alt="{$auction_goods.goods_name|escape:html}" id="goods_bimg"/> </a>
+    </div>
+    <div class="blank5"></div>
+    <div class="s-summary">
+        <div class="goods_info">
+        	<div class="title">
+              <h1>{$auction.goods_name|escape:html}</h1>
+            </div>
+          	<div class="summary">
+            <form name="theForm" action="auction.php" method="post">
+            	<div class="m-sales">
+                    <span class="key">{$lang.au_current_price}：</span>
+                    <div class="value">{$auction.formated_current_price}</div>
+                </div>
+              	<div class="m-sales">
+                    <span class="key">起止时间：</span>
+                    <div class="value">{$auction.start_time} -- {$auction.end_time}</div>
+                </div>
+                <div class="m-sales">
+                    <span class="key">{$lang.au_start_price}：</span>
+                    <div class="value">{$auction.formated_start_price}</div>
+                </div>
+                <div class="m-sales">
+                    <span class="key">{$lang.au_amplitude}：</span>
+                    <div class="value">{$auction.formated_amplitude}</div>
+                </div>
+                <!-- {if $auction.end_price gt 0} -->
+                <div class="m-sales">
+                    <span class="key">{$lang.au_end_price}：</span>
+                    <div class="value">{$auction.formated_end_price}</div>
+                </div>
+                <div class="m-sales">
+                    <span class="key">使用状态：</span>
+                    <div class="value">使用过</div>
+                </div>
+                <!-- {/if} --> 
+              	<!-- {if $auction.deposit gt 0} -->
+                <div class="m-sales">
+                    <span class="key">{$lang.au_deposit}：</span>
+                    <div class="value">{$auction.formated_deposit}</div>
+                </div>
+              	<!-- {/if} -->
+              	<!-- {if $auction.status_no eq 0} 未开始 -->
+                <div class="m-sales">
+                    <span class="key">{$lang.au_pre_start}</span>
+                </div>
+              	<!-- {elseif $auction.status_no eq 1} 进行中 -->
+                <div class="m-sales">
+                    <span class="key">{$lang.au_under_way}：</span>
+                    <div class="value"><span id="leftTime">{$lang.please_waiting}</span></div>
+                </div>
+              	<!-- {else} 已结束 --> 
+                <!-- {if $auction.is_winner} -->
+				<div class="m-sales">
+                    <span class="key">{$lang.au_is_winner}</span>
+                	<div class="clear"></div>
+                    <div class="choose-btns">
+                        <input name="buy" type="submit" class="c-btn-orange" value="{$lang.button_buy}" />
+                        <input name="act" type="hidden" value="buy" />
+                        <input name="id" type="hidden" value="{$auction.act_id}" />
+                    </div>
+                </div>
+              	<!-- {else} -->
+              	<div class="m-sales">
+                    <span class="key">{$lang.au_finished}，</span>
+                    <div class="value"><!-- {if $smarty.session.user_id} -->{$lang.au_final_bid_not_you}<!-- {else} -->{$lang.au_buy_after_login}，{$lang.au_final_unlogin}<!-- {/if} --> </div>
+                </div>
+                <!-- {/if} --> 
+              	<!-- {/if} -->
+            </form>
+          </div>
+          	
+        </div>
+    </div>
+    <div class="au_key" id="au-key">
+            <div class="a-key" id="bid-info">
+              <div class="quantity-form" id="quantityFormId">
+                <form name="theForm" action="auction.php" method="post">
+                  <span>{$lang.au_i_want_bid}：</span>
+                  <input name="price" type="text" class="inputBg" size="8" {if $auction.current_price_a gte $auction.end_price && $auction.end_price gt 0}disabled="disabled" {/if}/>
+                  <input name="bid" type="{if $auction.current_price_a gte $auction.end_price && $auction.end_price gt 0}hidden{else}submit{/if}" class="btn_blue" value="{$lang.button_bid}" />
+                  <input name="act" type="hidden" value="bid" />
+                  <input name="id" type="hidden" value="{$auction.act_id}" />
+                  <input name="act_count" type="hidden" value="{$auction_log_count}" />
+                  <br />
+                </form>
+              </div>
+              <div class="auc-infos"><span id="checkLast8BidRecords">【点击查看（共{$auction_log_count}次出价）】</span></div>
+              <div class="auctioninfo">
+                <div class="tb-void">
+                  <table width="100%" border="0" cellpadding="5" cellspacing="1" bgcolor="#dddddd">
+                    <tr>
+                      <th align="center" bgcolor="#f2f2f2">{$lang.au_bid_user}</th>
+                      <th align="center" bgcolor="#f2f2f2">{$lang.au_bid_price}</th>
+                      <th align="center" bgcolor="#f2f2f2">{$lang.au_bid_time}</th>
+                    </tr>
+                    <!-- {foreach from=$auction_log item=log name=fe_bid_log} -->
+                    <tr class="oushu {if $smarty.foreach.fe_bid_log.iteration %2 == 1}jishu{/if}">
+                      <td align="center">{$log.user_name}</td>
+                      <td align="center">{$log.formated_bid_price}</td>
+                      <td align="center">{$log.bid_time}</td>
+                    </tr>
+                    <!-- {foreachelse} -->
+                    <tr>
+                      <td colspan="4" align="center" bgcolor="#ffffff">{$lang.no_bid_log}</td>
+                    </tr>
+                    <!-- {/foreach} -->
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+  </div>
+  <!-- #BeginLibraryItem "/library/auction_jieshao.lbi" --><!-- #EndLibraryItem --> </section>
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem --> <!-- #BeginLibraryItem "/library/footer_nav.lbi" --><!-- #EndLibraryItem -->
+</body>
+<script type="text/javascript">
+$(document).ready(function(){
+  $(".auc-infos").click(function(){
+            var parentAuKey = $(this).parents("#au-key");
+			$('.auctioninfo').slideToggle();
+			$('#au-key').toggleClass('selectt');
+        });
+    })
+</script>
+<script type="text/javascript">
+var gmt_end_time = "{$auction.gmt_end_time|default:0}";
+{foreach from=$lang.goods_js item=item key=key}
+var {$key} = "{$item}";
+var now_time = {$now_time};
+{/foreach}
+<!-- {literal} -->
+
+onload = function()
+{
+  try
+  {
+    onload_leftTime(now_time);
+  }
+  catch (e)
+  {}
+}
+<!-- {/literal} -->
+</script>
+</html>

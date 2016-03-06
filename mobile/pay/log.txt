@@ -1,0 +1,552 @@
+{"service":"alipay.wap.trade.create.direct","sign":"24fffab54c3ded151dff8e3032133f85","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2015031395149<\/subject><trade_no>2015031300001000600046913779<\/trade_no><buyer_email>18788588403<\/buyer_email><gmt_create>2015-03-13 10:45:21<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2015031395149<\/out_trade_no><notify_time>2015-03-13 11:09:15<\/notify_time><seller_id>2088701644671332<\/seller_id><trade_status>TRADE_FINISHED<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>0.01<\/total_fee><gmt_payment>2015-03-13 10:45:40<\/gmt_payment><seller_email>qhdtianchao@163.com<\/seller_email><gmt_close>2015-03-13 10:45:40<\/gmt_close><price>0.01<\/price><buyer_id>2088702927278600<\/buyer_id><notify_id>9c0b28ce63baa1da52e7b541054911c75c<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}[]执行日期：20150313111850
+POST:{"service":"alipay.wap.trade.create.direct","sign":"7f404a7edd9f7b368c954df60a2ee48f","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2015031395886<\/subject><trade_no>2015031300001000600046915626<\/trade_no><buyer_email>18788588403<\/buyer_email><gmt_create>2015-03-13 11:04:30<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2015031395886<\/out_trade_no><notify_time>2015-03-13 11:04:50<\/notify_time><seller_id>2088701644671332<\/seller_id><trade_status>TRADE_FINISHED<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>0.01<\/total_fee><gmt_payment>2015-03-13 11:04:50<\/gmt_payment><seller_email>qhdtianchao@163.com<\/seller_email><gmt_close>2015-03-13 11:04:50<\/gmt_close><price>0.01<\/price><buyer_id>2088702927278600<\/buyer_id><notify_id>b22bf5a3d8ebcec0805b2c07faa415555c<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20150313111850
+GET:[]
+执行日期：20150313111856
+POST:{"service":"alipay.wap.trade.create.direct","sign":"7f404a7edd9f7b368c954df60a2ee48f","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2015031395886<\/subject><trade_no>2015031300001000600046915626<\/trade_no><buyer_email>18788588403<\/buyer_email><gmt_create>2015-03-13 11:04:30<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2015031395886<\/out_trade_no><notify_time>2015-03-13 11:04:50<\/notify_time><seller_id>2088701644671332<\/seller_id><trade_status>TRADE_FINISHED<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>0.01<\/total_fee><gmt_payment>2015-03-13 11:04:50<\/gmt_payment><seller_email>qhdtianchao@163.com<\/seller_email><gmt_close>2015-03-13 11:04:50<\/gmt_close><price>0.01<\/price><buyer_id>2088702927278600<\/buyer_id><notify_id>b22bf5a3d8ebcec0805b2c07faa415555c<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20150313111856
+GET:[]
+执行日期：20150313111900
+POST:{"service":"alipay.wap.trade.create.direct","sign":"746a037619ea42bf0664d71e157a3b06","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2015031395886<\/subject><trade_no>2015031300001000600046915626<\/trade_no><buyer_email>18788588403<\/buyer_email><gmt_create>2015-03-13 11:04:30<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2015031395886<\/out_trade_no><notify_time>2015-03-13 11:19:00<\/notify_time><seller_id>2088701644671332<\/seller_id><trade_status>TRADE_FINISHED<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>0.01<\/total_fee><gmt_payment>2015-03-13 11:04:50<\/gmt_payment><seller_email>qhdtianchao@163.com<\/seller_email><gmt_close>2015-03-13 11:04:50<\/gmt_close><price>0.01<\/price><buyer_id>2088702927278600<\/buyer_id><notify_id>b22bf5a3d8ebcec0805b2c07faa415555c<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20150313111900
+GET:[]
+执行日期：20150313111923
+POST:{"service":"alipay.wap.trade.create.direct","sign":"fa35aa403250a77b7a8582eea44a275c","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2015031395886<\/subject><trade_no>2015031300001000600046915626<\/trade_no><buyer_email>18788588403<\/buyer_email><gmt_create>2015-03-13 11:04:30<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2015031395886<\/out_trade_no><notify_time>2015-03-13 11:19:22<\/notify_time><seller_id>2088701644671332<\/seller_id><trade_status>TRADE_FINISHED<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>0.01<\/total_fee><gmt_payment>2015-03-13 11:04:50<\/gmt_payment><seller_email>qhdtianchao@163.com<\/seller_email><gmt_close>2015-03-13 11:04:50<\/gmt_close><price>0.01<\/price><buyer_id>2088702927278600<\/buyer_id><notify_id>b22bf5a3d8ebcec0805b2c07faa415555c<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20150313111923
+GET:[]
+执行日期：20150313111949
+POST:{"service":"alipay.wap.trade.create.direct","sign":"7f404a7edd9f7b368c954df60a2ee48f","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2015031395886<\/subject><trade_no>2015031300001000600046915626<\/trade_no><buyer_email>18788588403<\/buyer_email><gmt_create>2015-03-13 11:04:30<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2015031395886<\/out_trade_no><notify_time>2015-03-13 11:04:50<\/notify_time><seller_id>2088701644671332<\/seller_id><trade_status>TRADE_FINISHED<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>0.01<\/total_fee><gmt_payment>2015-03-13 11:04:50<\/gmt_payment><seller_email>qhdtianchao@163.com<\/seller_email><gmt_close>2015-03-13 11:04:50<\/gmt_close><price>0.01<\/price><buyer_id>2088702927278600<\/buyer_id><notify_id>b22bf5a3d8ebcec0805b2c07faa415555c<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20150313111949
+GET:[]
+执行日期：20150313112013
+POST:{"service":"alipay.wap.trade.create.direct","sign":"7f404a7edd9f7b368c954df60a2ee48f","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2015031395886<\/subject><trade_no>2015031300001000600046915626<\/trade_no><buyer_email>18788588403<\/buyer_email><gmt_create>2015-03-13 11:04:30<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2015031395886<\/out_trade_no><notify_time>2015-03-13 11:04:50<\/notify_time><seller_id>2088701644671332<\/seller_id><trade_status>TRADE_FINISHED<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>0.01<\/total_fee><gmt_payment>2015-03-13 11:04:50<\/gmt_payment><seller_email>qhdtianchao@163.com<\/seller_email><gmt_close>2015-03-13 11:04:50<\/gmt_close><price>0.01<\/price><buyer_id>2088702927278600<\/buyer_id><notify_id>b22bf5a3d8ebcec0805b2c07faa415555c<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20150313112013
+GET:[]
+执行日期：20150313112354
+POST:{"service":"alipay.wap.trade.create.direct","sign":"7f404a7edd9f7b368c954df60a2ee48f","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2015031395886<\/subject><trade_no>2015031300001000600046915626<\/trade_no><buyer_email>18788588403<\/buyer_email><gmt_create>2015-03-13 11:04:30<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2015031395886<\/out_trade_no><notify_time>2015-03-13 11:04:50<\/notify_time><seller_id>2088701644671332<\/seller_id><trade_status>TRADE_FINISHED<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>0.01<\/total_fee><gmt_payment>2015-03-13 11:04:50<\/gmt_payment><seller_email>qhdtianchao@163.com<\/seller_email><gmt_close>2015-03-13 11:04:50<\/gmt_close><price>0.01<\/price><buyer_id>2088702927278600<\/buyer_id><notify_id>b22bf5a3d8ebcec0805b2c07faa415555c<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20150313112354
+GET:[]
+执行日期：20150313112502
+POST:{"service":"alipay.wap.trade.create.direct","sign":"7f404a7edd9f7b368c954df60a2ee48f","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2015031395886<\/subject><trade_no>2015031300001000600046915626<\/trade_no><buyer_email>18788588403<\/buyer_email><gmt_create>2015-03-13 11:04:30<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2015031395886<\/out_trade_no><notify_time>2015-03-13 11:04:50<\/notify_time><seller_id>2088701644671332<\/seller_id><trade_status>TRADE_FINISHED<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>0.01<\/total_fee><gmt_payment>2015-03-13 11:04:50<\/gmt_payment><seller_email>qhdtianchao@163.com<\/seller_email><gmt_close>2015-03-13 11:04:50<\/gmt_close><price>0.01<\/price><buyer_id>2088702927278600<\/buyer_id><notify_id>b22bf5a3d8ebcec0805b2c07faa415555c<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20150313112502
+GET:[]
+执行日期：20150313112646
+POST:{"service":"alipay.wap.trade.create.direct","sign":"7f404a7edd9f7b368c954df60a2ee48f","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2015031395886<\/subject><trade_no>2015031300001000600046915626<\/trade_no><buyer_email>18788588403<\/buyer_email><gmt_create>2015-03-13 11:04:30<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2015031395886<\/out_trade_no><notify_time>2015-03-13 11:04:50<\/notify_time><seller_id>2088701644671332<\/seller_id><trade_status>TRADE_FINISHED<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>0.01<\/total_fee><gmt_payment>2015-03-13 11:04:50<\/gmt_payment><seller_email>qhdtianchao@163.com<\/seller_email><gmt_close>2015-03-13 11:04:50<\/gmt_close><price>0.01<\/price><buyer_id>2088702927278600<\/buyer_id><notify_id>b22bf5a3d8ebcec0805b2c07faa415555c<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20150313112646
+GET:[]
+执行日期：20150313112743
+POST:{"service":"alipay.wap.trade.create.direct","sign":"7f404a7edd9f7b368c954df60a2ee48f","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2015031395886<\/subject><trade_no>2015031300001000600046915626<\/trade_no><buyer_email>18788588403<\/buyer_email><gmt_create>2015-03-13 11:04:30<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2015031395886<\/out_trade_no><notify_time>2015-03-13 11:04:50<\/notify_time><seller_id>2088701644671332<\/seller_id><trade_status>TRADE_FINISHED<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>0.01<\/total_fee><gmt_payment>2015-03-13 11:04:50<\/gmt_payment><seller_email>qhdtianchao@163.com<\/seller_email><gmt_close>2015-03-13 11:04:50<\/gmt_close><price>0.01<\/price><buyer_id>2088702927278600<\/buyer_id><notify_id>b22bf5a3d8ebcec0805b2c07faa415555c<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20150313112743
+GET:[]
+执行日期：20150313112932
+POST:{"service":"alipay.wap.trade.create.direct","sign":"7f404a7edd9f7b368c954df60a2ee48f","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2015031395886<\/subject><trade_no>2015031300001000600046915626<\/trade_no><buyer_email>18788588403<\/buyer_email><gmt_create>2015-03-13 11:04:30<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2015031395886<\/out_trade_no><notify_time>2015-03-13 11:04:50<\/notify_time><seller_id>2088701644671332<\/seller_id><trade_status>TRADE_FINISHED<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>0.01<\/total_fee><gmt_payment>2015-03-13 11:04:50<\/gmt_payment><seller_email>qhdtianchao@163.com<\/seller_email><gmt_close>2015-03-13 11:04:50<\/gmt_close><price>0.01<\/price><buyer_id>2088702927278600<\/buyer_id><notify_id>b22bf5a3d8ebcec0805b2c07faa415555c<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20150313112932
+GET:[]
+执行日期：20150313113327
+POST:{"service":"alipay.wap.trade.create.direct","sign":"7f404a7edd9f7b368c954df60a2ee48f","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2015031395886<\/subject><trade_no>2015031300001000600046915626<\/trade_no><buyer_email>18788588403<\/buyer_email><gmt_create>2015-03-13 11:04:30<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2015031395886<\/out_trade_no><notify_time>2015-03-13 11:04:50<\/notify_time><seller_id>2088701644671332<\/seller_id><trade_status>TRADE_FINISHED<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>0.01<\/total_fee><gmt_payment>2015-03-13 11:04:50<\/gmt_payment><seller_email>qhdtianchao@163.com<\/seller_email><gmt_close>2015-03-13 11:04:50<\/gmt_close><price>0.01<\/price><buyer_id>2088702927278600<\/buyer_id><notify_id>b22bf5a3d8ebcec0805b2c07faa415555c<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20150313113327
+GET:[]
+执行日期：20150313113606
+POST:{"service":"alipay.wap.trade.create.direct","sign":"7f404a7edd9f7b368c954df60a2ee48f","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2015031395886<\/subject><trade_no>2015031300001000600046915626<\/trade_no><buyer_email>18788588403<\/buyer_email><gmt_create>2015-03-13 11:04:30<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2015031395886<\/out_trade_no><notify_time>2015-03-13 11:04:50<\/notify_time><seller_id>2088701644671332<\/seller_id><trade_status>TRADE_FINISHED<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>0.01<\/total_fee><gmt_payment>2015-03-13 11:04:50<\/gmt_payment><seller_email>qhdtianchao@163.com<\/seller_email><gmt_close>2015-03-13 11:04:50<\/gmt_close><price>0.01<\/price><buyer_id>2088702927278600<\/buyer_id><notify_id>b22bf5a3d8ebcec0805b2c07faa415555c<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20150313113606
+GET:[]
+执行日期：20150313113730
+POST:{"service":"alipay.wap.trade.create.direct","sign":"59d7ea7e9a331e559a8d3556fb2b044b","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2015031380686<\/subject><trade_no>2015031300001000600046910939<\/trade_no><buyer_email>18788588403<\/buyer_email><gmt_create>2015-03-13 10:12:41<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2015031380686<\/out_trade_no><notify_time>2015-03-13 11:37:30<\/notify_time><seller_id>2088701644671332<\/seller_id><trade_status>TRADE_FINISHED<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>0.01<\/total_fee><gmt_payment>2015-03-13 10:13:00<\/gmt_payment><seller_email>qhdtianchao@163.com<\/seller_email><gmt_close>2015-03-13 10:13:00<\/gmt_close><price>0.01<\/price><buyer_id>2088702927278600<\/buyer_id><notify_id>22ffd57707a31b86ea55161d95ddd29c5c<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20150313113730
+GET:[]
+执行日期：20150313114301
+POST:{"service":"alipay.wap.trade.create.direct","sign":"8dfa9bf99289745076f8eeff7708a6c9","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2015031337084<\/subject><trade_no>2015031300001000600046911380<\/trade_no><buyer_email>18788588403<\/buyer_email><gmt_create>2015-03-13 10:18:18<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2015031337084<\/out_trade_no><notify_time>2015-03-13 11:43:01<\/notify_time><seller_id>2088701644671332<\/seller_id><trade_status>TRADE_FINISHED<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>0.01<\/total_fee><gmt_payment>2015-03-13 10:19:01<\/gmt_payment><seller_email>qhdtianchao@163.com<\/seller_email><gmt_close>2015-03-13 10:19:01<\/gmt_close><price>0.01<\/price><buyer_id>2088702927278600<\/buyer_id><notify_id>9f561dc7d632b0cb4c3c7fb3c647b09b5c<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20150313114301
+GET:[]
+执行日期：20150313114934
+POST:{"service":"alipay.wap.trade.create.direct","sign":"34ac4e248a164df33c04c6f548c7e590","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2015031352348<\/subject><trade_no>2015031300001000600046912055<\/trade_no><buyer_email>18788588403<\/buyer_email><gmt_create>2015-03-13 10:25:23<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2015031352348<\/out_trade_no><notify_time>2015-03-13 11:49:34<\/notify_time><seller_id>2088701644671332<\/seller_id><trade_status>TRADE_FINISHED<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>0.01<\/total_fee><gmt_payment>2015-03-13 10:25:41<\/gmt_payment><seller_email>qhdtianchao@163.com<\/seller_email><gmt_close>2015-03-13 10:25:41<\/gmt_close><price>0.01<\/price><buyer_id>2088702927278600<\/buyer_id><notify_id>c7eaeb378402bcd56e482ed7b38ed7145c<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20150313114934
+GET:[]
+执行日期：20150313120957
+POST:{"service":"alipay.wap.trade.create.direct","sign":"8c2ab0c1aac892b26243a2618dfb1959","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2015031395149<\/subject><trade_no>2015031300001000600046913779<\/trade_no><buyer_email>18788588403<\/buyer_email><gmt_create>2015-03-13 10:45:21<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2015031395149<\/out_trade_no><notify_time>2015-03-13 12:09:57<\/notify_time><seller_id>2088701644671332<\/seller_id><trade_status>TRADE_FINISHED<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>0.01<\/total_fee><gmt_payment>2015-03-13 10:45:40<\/gmt_payment><seller_email>qhdtianchao@163.com<\/seller_email><gmt_close>2015-03-13 10:45:40<\/gmt_close><price>0.01<\/price><buyer_id>2088702927278600<\/buyer_id><notify_id>9c0b28ce63baa1da52e7b541054911c75c<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20150313120957
+GET:[]
+执行日期：20150313121546
+POST:{"service":"alipay.wap.trade.create.direct","sign":"f64fe6aa518466fc4cb743237109c21d","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2015031384150<\/subject><trade_no>2015031300001000600046914279<\/trade_no><buyer_email>18788588403<\/buyer_email><gmt_create>2015-03-13 10:50:45<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2015031384150<\/out_trade_no><notify_time>2015-03-13 12:15:46<\/notify_time><seller_id>2088701644671332<\/seller_id><trade_status>TRADE_FINISHED<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>0.01<\/total_fee><gmt_payment>2015-03-13 10:51:10<\/gmt_payment><seller_email>qhdtianchao@163.com<\/seller_email><gmt_close>2015-03-13 10:51:10<\/gmt_close><price>0.01<\/price><buyer_id>2088702927278600<\/buyer_id><notify_id>19fd8405337f85109085d24755cd1e7d5c<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20150313121546
+GET:[]
+执行日期：20150313122808
+POST:{"service":"alipay.wap.trade.create.direct","sign":"891706271addec25b29d03e66812cda8","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2015031395886<\/subject><trade_no>2015031300001000600046915626<\/trade_no><buyer_email>18788588403<\/buyer_email><gmt_create>2015-03-13 11:04:30<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2015031395886<\/out_trade_no><notify_time>2015-03-13 12:28:07<\/notify_time><seller_id>2088701644671332<\/seller_id><trade_status>TRADE_FINISHED<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>0.01<\/total_fee><gmt_payment>2015-03-13 11:04:50<\/gmt_payment><seller_email>qhdtianchao@163.com<\/seller_email><gmt_close>2015-03-13 11:04:50<\/gmt_close><price>0.01<\/price><buyer_id>2088702927278600<\/buyer_id><notify_id>b22bf5a3d8ebcec0805b2c07faa415555c<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20150313122808
+GET:[]
+执行日期：20150313134709
+POST:{"service":"alipay.wap.trade.create.direct","sign":"1b463d4b1305e28f4533910f35105b05","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2015031359463<\/subject><trade_no>2015031300001000110048030761<\/trade_no><buyer_email>lilingxumiss@sina.com<\/buyer_email><gmt_create>2015-03-13 13:46:18<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2015031359463<\/out_trade_no><notify_time>2015-03-13 13:47:08<\/notify_time><seller_id>2088701644671332<\/seller_id><trade_status>TRADE_FINISHED<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>0.10<\/total_fee><gmt_payment>2015-03-13 13:47:08<\/gmt_payment><seller_email>qhdtianchao@163.com<\/seller_email><gmt_close>2015-03-13 13:47:08<\/gmt_close><price>0.10<\/price><buyer_id>2088502457913118<\/buyer_id><notify_id>7c3d52ed6e1b7be99ebd582297c29c9f2m<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20150313134709
+GET:[]
+执行日期：20150313134711
+POST:[]
+执行日期：20150313134711
+GET:{"out_trade_no":"2015031359463","request_token":"requestToken","result":"success","trade_no":"2015031300001000110048030761","sign":"642972ccfddbedcc392a16158aee014c","sign_type":"MD5"}
+执行日期：20150313135028
+POST:{"service":"alipay.wap.trade.create.direct","sign":"b902e1d814515634c692cc5a94661226","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2015031397340<\/subject><trade_no>2015031300001000110048031118<\/trade_no><buyer_email>lilingxumiss@sina.com<\/buyer_email><gmt_create>2015-03-13 13:50:25<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2015031397340<\/out_trade_no><notify_time>2015-03-13 13:50:28<\/notify_time><seller_id>2088701644671332<\/seller_id><trade_status>TRADE_FINISHED<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>0.01<\/total_fee><gmt_payment>2015-03-13 13:50:28<\/gmt_payment><seller_email>qhdtianchao@163.com<\/seller_email><gmt_close>2015-03-13 13:50:28<\/gmt_close><price>0.01<\/price><buyer_id>2088502457913118<\/buyer_id><notify_id>baa26ded1b48624e2c85eff310b84b5b2m<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20150313135028
+GET:[]
+执行日期：20150313135040
+POST:[]
+执行日期：20150313135040
+GET:{"out_trade_no":"2015031397340","request_token":"requestToken","result":"success","trade_no":"2015031300001000110048031118","sign":"33a24857b8ad150e832213452ed75235","sign_type":"MD5"}
+执行日期：20150826090006
+POST:{"service":"alipay.wap.trade.create.direct","sign":"974f0bd5d6429a6827af07c2e49de9b7","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2015082666524<\/subject><trade_no>2015082600001000480062373800<\/trade_no><buyer_email>luoshiyang@gmail.com<\/buyer_email><gmt_create>2015-08-26 17:00:04<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2015082666524<\/out_trade_no><notify_time>2015-08-26 17:00:05<\/notify_time><seller_id>2088021072742621<\/seller_id><trade_status>TRADE_SUCCESS<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>1.00<\/total_fee><gmt_payment>2015-08-26 17:00:05<\/gmt_payment><seller_email>finance@beyondgo.cn<\/seller_email><price>1.00<\/price><buyer_id>2088002770705484<\/buyer_id><notify_id>aa7ba273867ec7fa5b9b87479a94254c4o<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20150826090006
+GET:[]
+执行日期：20150826170010
+POST:[]
+执行日期：20150826170010
+GET:{"out_trade_no":"2015082666524","request_token":"requestToken","result":"success","trade_no":"2015082600001000480062373800","sign":"b96a16fb8f9c1ddc1c63cc0362382837","sign_type":"MD5"}
+执行日期：20150826093135
+POST:{"service":"alipay.wap.trade.create.direct","sign":"bc3c7d18239019b1298a07b254e2d6dc","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2015082687549<\/subject><trade_no>2015082600001000360066337843<\/trade_no><buyer_email>374684786@qq.com<\/buyer_email><gmt_create>2015-08-26 17:31:34<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2015082687549<\/out_trade_no><notify_time>2015-08-26 17:31:35<\/notify_time><seller_id>2088021072742621<\/seller_id><trade_status>TRADE_SUCCESS<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>1.00<\/total_fee><gmt_payment>2015-08-26 17:31:35<\/gmt_payment><seller_email>finance@beyondgo.cn<\/seller_email><price>1.00<\/price><buyer_id>2088802386665365<\/buyer_id><notify_id>c0698967bb078a826a039189aa707d8c40<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20150826093135
+GET:[]
+执行日期：20150826173144
+POST:[]
+执行日期：20150826173144
+GET:{"out_trade_no":"2015082687549","request_token":"requestToken","result":"success","trade_no":"2015082600001000360066337843","sign":"ab935e0bf7309ce348c1e3dbb25253ae","sign_type":"MD5"}
+执行日期：20150904035328
+POST:{"service":"alipay.wap.trade.create.direct","sign":"16ccfe7d51ca0fa02219c177a725b823","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2015090468291<\/subject><trade_no>2015090400001000290061880512<\/trade_no><buyer_email>18106569227<\/buyer_email><gmt_create>2015-09-04 11:53:26<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2015090468291<\/out_trade_no><notify_time>2015-09-04 11:53:28<\/notify_time><seller_id>2088021072742621<\/seller_id><trade_status>TRADE_SUCCESS<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>313.00<\/total_fee><gmt_payment>2015-09-04 11:53:27<\/gmt_payment><seller_email>finance@beyondgo.cn<\/seller_email><price>313.00<\/price><buyer_id>2088702693247291<\/buyer_id><notify_id>f71ec95e48237a8d1ca6c6bc8215e5c53m<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20150904035328
+GET:[]
+执行日期：20150904115337
+POST:[]
+执行日期：20150904115337
+GET:{"out_trade_no":"2015090468291","request_token":"requestToken","result":"success","trade_no":"2015090400001000290061880512","sign":"09a807ee4194b8eb01cdffae03cb0dd7","sign_type":"MD5"}
+执行日期：20150915013752
+POST:{"service":"alipay.wap.trade.create.direct","sign":"d6249ae5bcdf4d9111515e9f17d3e713","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2015091598591<\/subject><trade_no>2015091500001000880060554401<\/trade_no><buyer_email>yangjing_8801@126.com<\/buyer_email><gmt_create>2015-09-15 09:37:51<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2015091598591<\/out_trade_no><notify_time>2015-09-15 09:37:51<\/notify_time><seller_id>2088021072742621<\/seller_id><trade_status>TRADE_SUCCESS<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>154.00<\/total_fee><gmt_payment>2015-09-15 09:37:51<\/gmt_payment><seller_email>finance@beyondgo.cn<\/seller_email><price>154.00<\/price><buyer_id>2088102126042882<\/buyer_id><notify_id>7f76108d1de3722cc97c50b0363ccfb46w<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20150915013752
+GET:[]
+执行日期：20150915093800
+POST:[]
+执行日期：20150915093800
+GET:{"out_trade_no":"2015091598591","request_token":"requestToken","result":"success","trade_no":"2015091500001000880060554401","sign":"10271ed8690c7d41c595885da739b6af","sign_type":"MD5"}
+执行日期：20150916022202
+POST:{"service":"alipay.wap.trade.create.direct","sign":"a53ac07c6434398d6c08bb2275377156","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2015091681338<\/subject><trade_no>2015091600001000340064558145<\/trade_no><buyer_email>32643468@qq.com<\/buyer_email><gmt_create>2015-09-16 10:22:00<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2015091681338<\/out_trade_no><notify_time>2015-09-16 10:22:02<\/notify_time><seller_id>2088021072742621<\/seller_id><trade_status>TRADE_SUCCESS<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>516.00<\/total_fee><gmt_payment>2015-09-16 10:22:01<\/gmt_payment><seller_email>finance@beyondgo.cn<\/seller_email><price>516.00<\/price><buyer_id>2088002492130340<\/buyer_id><notify_id>9fb54e90268770042d1f5804527f78b73w<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20150916022202
+GET:[]
+执行日期：20150916102211
+POST:[]
+执行日期：20150916102211
+GET:{"out_trade_no":"2015091681338","request_token":"requestToken","result":"success","trade_no":"2015091600001000340064558145","sign":"393c9dba01f068576a034f57301d4163","sign_type":"MD5"}
+执行日期：20150922064159
+POST:{"service":"alipay.wap.trade.create.direct","sign":"1c50604758d33ac6bb1a37d2ef22e422","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2015092284860<\/subject><trade_no>2015092200001000140061149954<\/trade_no><buyer_email>13984322866<\/buyer_email><gmt_create>2015-09-22 14:41:40<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2015092284860<\/out_trade_no><notify_time>2015-09-22 14:41:58<\/notify_time><seller_id>2088021072742621<\/seller_id><trade_status>TRADE_SUCCESS<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>575.00<\/total_fee><gmt_payment>2015-09-22 14:41:58<\/gmt_payment><seller_email>finance@beyondgo.cn<\/seller_email><price>575.00<\/price><buyer_id>2088502658366148<\/buyer_id><notify_id>a70a315f788c219713d913ceaba581082s<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20150922064159
+GET:[]
+执行日期：20150922144207
+POST:[]
+执行日期：20150922144207
+GET:{"out_trade_no":"2015092284860","request_token":"requestToken","result":"success","trade_no":"2015092200001000140061149954","sign":"b28a817e44c6253edfdeddf289915bf3","sign_type":"MD5"}
+执行日期：20150923105010
+POST:{"service":"alipay.wap.trade.create.direct","sign":"11e9eda71105ead763bb9b80a2e28e46","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2015092322647<\/subject><trade_no>2015092300001000410026501897<\/trade_no><buyer_email>godblessdavehu@gmail.com<\/buyer_email><gmt_create>2015-09-23 18:50:09<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2015092322647<\/out_trade_no><notify_time>2015-09-23 18:50:10<\/notify_time><seller_id>2088021072742621<\/seller_id><trade_status>TRADE_SUCCESS<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>1.00<\/total_fee><gmt_payment>2015-09-23 18:50:09<\/gmt_payment><seller_email>finance@beyondgo.cn<\/seller_email><price>1.00<\/price><buyer_id>2088002077026411<\/buyer_id><notify_id>0cf01b773d635381e4b4952971f70f9d4a<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20150923105010
+GET:[]
+执行日期：20150923185012
+POST:[]
+执行日期：20150923185012
+GET:{"out_trade_no":"2015092322647","request_token":"requestToken","result":"success","trade_no":"2015092300001000410026501897","sign":"31abee64bf92d35e5ea8a46ed027fd4f","sign_type":"MD5"}
+执行日期：20150925050152
+POST:{"service":"alipay.wap.trade.create.direct","sign":"ff2a53c7967b9ede0ea7a16dd09c10f2","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2015092577490<\/subject><trade_no>2015092500001000900070349355<\/trade_no><buyer_email>kehuzijinbu001@alipay.com<\/buyer_email><gmt_create>2015-09-25 13:01:22<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2015092577490<\/out_trade_no><notify_time>2015-09-25 13:01:51<\/notify_time><seller_id>2088021072742621<\/seller_id><trade_status>TRADE_SUCCESS<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>273.00<\/total_fee><gmt_payment>2015-09-25 13:01:51<\/gmt_payment><seller_email>finance@beyondgo.cn<\/seller_email><price>273.00<\/price><buyer_id>2088401415536904<\/buyer_id><notify_id>8862158456bf15d011bb7e49089515a970<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20150925050152
+GET:[]
+执行日期：20150925130155
+POST:[]
+执行日期：20150925130155
+GET:{"out_trade_no":"2015092577490","request_token":"requestToken","result":"success","trade_no":"2015092500001000900070349355","sign":"f80defc7c6e7faaf8a67bfd57a4afd29","sign_type":"MD5"}
+执行日期：20150927030435
+POST:{"service":"alipay.wap.trade.create.direct","sign":"9baeeccb92bede12972805c18dbc53d0","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2015092774097<\/subject><trade_no>2015092700001000140061304212<\/trade_no><buyer_email>13984322866<\/buyer_email><gmt_create>2015-09-27 11:04:14<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2015092774097<\/out_trade_no><notify_time>2015-09-27 11:04:35<\/notify_time><seller_id>2088021072742621<\/seller_id><trade_status>TRADE_SUCCESS<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>627.00<\/total_fee><gmt_payment>2015-09-27 11:04:35<\/gmt_payment><seller_email>finance@beyondgo.cn<\/seller_email><price>627.00<\/price><buyer_id>2088502658366148<\/buyer_id><notify_id>a011f69893c29f480f8ab52db61ba5302s<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20150927030435
+GET:[]
+执行日期：20150927110443
+POST:[]
+执行日期：20150927110443
+GET:{"out_trade_no":"2015092774097","request_token":"requestToken","result":"success","trade_no":"2015092700001000140061304212","sign":"72aeac8acee7d2d0f724aee25a74e9ae","sign_type":"MD5"}
+执行日期：20151015080436
+POST:{"service":"alipay.wap.trade.create.direct","sign":"dbea21da63f5a5e7e3bc552b44285253","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2015101528826<\/subject><trade_no>2015101500001000480064547680<\/trade_no><buyer_email>luoshiyang@gmail.com<\/buyer_email><gmt_create>2015-10-15 16:04:35<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2015101528826<\/out_trade_no><notify_time>2015-10-15 16:04:36<\/notify_time><seller_id>2088021072742621<\/seller_id><trade_status>TRADE_SUCCESS<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>1.00<\/total_fee><gmt_payment>2015-10-15 16:04:36<\/gmt_payment><seller_email>finance@beyondgo.cn<\/seller_email><price>1.00<\/price><buyer_id>2088002770705484<\/buyer_id><notify_id>fb9e2e44ac9c2a2dc46cc58327cf0dd54o<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20151015080436
+GET:[]
+执行日期：20151015160440
+POST:[]
+执行日期：20151015160440
+GET:{"out_trade_no":"2015101528826","request_token":"requestToken","result":"success","trade_no":"2015101500001000480064547680","sign":"8083f9cb013da7ec3d61315340cbfbc2","sign_type":"MD5"}
+执行日期：20151015115446
+POST:{"service":"alipay.wap.trade.create.direct","sign":"a16128cb9fae0f227d4579ef2442a075","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2015101513772<\/subject><trade_no>2015101500001000050066106577<\/trade_no><buyer_email>81439128@qq.com<\/buyer_email><gmt_create>2015-10-15 19:54:46<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2015101513772<\/out_trade_no><notify_time>2015-10-15 19:54:46<\/notify_time><seller_id>2088021072742621<\/seller_id><trade_status>TRADE_SUCCESS<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>1351.00<\/total_fee><gmt_payment>2015-10-15 19:54:46<\/gmt_payment><seller_email>finance@beyondgo.cn<\/seller_email><price>1351.00<\/price><buyer_id>2088812982950053<\/buyer_id><notify_id>d3f7755e53848cd282bb1dd2372eca882a<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20151015115446
+GET:[]
+执行日期：20151015195450
+POST:[]
+执行日期：20151015195450
+GET:{"out_trade_no":"2015101513772","request_token":"requestToken","result":"success","trade_no":"2015101500001000050066106577","sign":"062bf4e3702d63d8505b77aeba4e86e2","sign_type":"MD5"}
+执行日期：20151020045221
+POST:{"service":"alipay.wap.trade.create.direct","sign":"6507fc4a91b9e618caef6ff12eabcb28","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2015102040660<\/subject><trade_no>2015102000001000540065549853<\/trade_no><buyer_email>preciousgq@sina.com<\/buyer_email><gmt_create>2015-10-20 12:52:20<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2015102040660<\/out_trade_no><notify_time>2015-10-20 12:52:21<\/notify_time><seller_id>2088021072742621<\/seller_id><trade_status>TRADE_SUCCESS<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>338.00<\/total_fee><gmt_payment>2015-10-20 12:52:20<\/gmt_payment><seller_email>finance@beyondgo.cn<\/seller_email><price>338.00<\/price><buyer_id>2088202889934544<\/buyer_id><notify_id>e49377f05420d42bf25d6dc485f55a1c50<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20151020045221
+GET:[]
+执行日期：20151020125226
+POST:[]
+执行日期：20151020125226
+GET:{"out_trade_no":"2015102040660","request_token":"requestToken","result":"success","trade_no":"2015102000001000540065549853","sign":"a0dd1bf54f9ff0f1eac052803d3b16b5","sign_type":"MD5"}
+执行日期：20151113110437
+POST:{"service":"alipay.wap.trade.create.direct","sign":"f11e3413a554b12a849c14e7d08c1e20","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2015111379813<\/subject><trade_no>2015111321001004330030046612<\/trade_no><buyer_email>18685045243<\/buyer_email><gmt_create>2015-11-13 19:04:36<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2015111379813<\/out_trade_no><notify_time>2015-11-13 19:04:36<\/notify_time><seller_id>2088021072742621<\/seller_id><trade_status>TRADE_SUCCESS<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>144.00<\/total_fee><gmt_payment>2015-11-13 19:04:36<\/gmt_payment><seller_email>finance@beyondgo.cn<\/seller_email><price>144.00<\/price><buyer_id>2088802490641336<\/buyer_id><notify_id>fc214871cfdbd081a1beee045c211b9ijo<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20151113110437
+GET:[]
+执行日期：20151119094512
+POST:{"service":"alipay.wap.trade.create.direct","sign":"648c2caaba7697e2b98557a12453eaeb","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2015111914274<\/subject><trade_no>2015111921001004410025675633<\/trade_no><buyer_email>godblessdavehu@gmail.com<\/buyer_email><gmt_create>2015-11-19 17:45:00<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2015111914274<\/out_trade_no><notify_time>2015-11-19 17:45:12<\/notify_time><seller_id>2088021072742621<\/seller_id><trade_status>TRADE_SUCCESS<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>0.01<\/total_fee><gmt_payment>2015-11-19 17:45:11<\/gmt_payment><seller_email>finance@beyondgo.cn<\/seller_email><price>0.01<\/price><buyer_id>2088002077026411<\/buyer_id><notify_id>0b971188d04d8278f757bd5af258ed6j5w<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20151119094512
+GET:[]
+执行日期：20151119174515
+POST:[]
+执行日期：20151119174515
+GET:{"out_trade_no":"2015111914274","request_token":"requestToken","result":"success","trade_no":"2015111921001004410025675633","sign":"daba734d7ee97e024f855f388c03f858","sign_type":"MD5"}
+执行日期：20151125090013
+POST:{"service":"alipay.wap.trade.create.direct","sign":"3b0f3ae23b27f64c6fd142a491d5bb69","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2015082666524<\/subject><trade_no>2015082600001000480062373800<\/trade_no><buyer_email>luoshiyang@gmail.com<\/buyer_email><gmt_create>2015-08-26 17:00:04<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2015082666524<\/out_trade_no><notify_time>2015-11-25 17:00:12<\/notify_time><seller_id>2088021072742621<\/seller_id><trade_status>TRADE_FINISHED<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>1.00<\/total_fee><gmt_payment>2015-08-26 17:00:05<\/gmt_payment><seller_email>finance@beyondgo.cn<\/seller_email><gmt_close>2015-11-25 17:00:12<\/gmt_close><price>1.00<\/price><buyer_id>2088002770705484<\/buyer_id><notify_id>ad8eb733cd580493dcacee39ba5e17934o<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20151125090013
+GET:[]
+执行日期：20151125093218
+POST:{"service":"alipay.wap.trade.create.direct","sign":"805fc7e9197ab514fb738af3171f1d76","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2015082687549<\/subject><trade_no>2015082600001000360066337843<\/trade_no><buyer_email>374684786@qq.com<\/buyer_email><gmt_create>2015-08-26 17:31:34<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2015082687549<\/out_trade_no><notify_time>2015-11-25 17:32:17<\/notify_time><seller_id>2088021072742621<\/seller_id><trade_status>TRADE_FINISHED<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>1.00<\/total_fee><gmt_payment>2015-08-26 17:31:35<\/gmt_payment><seller_email>finance@beyondgo.cn<\/seller_email><gmt_close>2015-11-25 17:32:17<\/gmt_close><price>1.00<\/price><buyer_id>2088802386665365<\/buyer_id><notify_id>ac72d1584e9b50748ecfe225810ecbdc40<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20151125093218
+GET:[]
+执行日期：20151204035414
+POST:{"service":"alipay.wap.trade.create.direct","sign":"177116b5747640a550c5e30d0a08258d","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2015090468291<\/subject><trade_no>2015090400001000290061880512<\/trade_no><buyer_email>18106569227<\/buyer_email><gmt_create>2015-09-04 11:53:26<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2015090468291<\/out_trade_no><notify_time>2015-12-04 11:54:13<\/notify_time><seller_id>2088021072742621<\/seller_id><trade_status>TRADE_FINISHED<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>313.00<\/total_fee><gmt_payment>2015-09-04 11:53:27<\/gmt_payment><seller_email>finance@beyondgo.cn<\/seller_email><gmt_close>2015-12-04 11:54:13<\/gmt_close><price>313.00<\/price><buyer_id>2088702693247291<\/buyer_id><notify_id>df41e0acfa8d17cc624f1edbf9bf80453m<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20151204035414
+GET:[]
+执行日期：20151208051358
+POST:[]
+执行日期：20151208051358
+GET:{"out_trade_no":"2015111914274","request_token":"requestToken","result":"success","trade_no":"2015111921001004410025675633","sign":"daba734d7ee97e024f855f388c03f858","sign_type":"MD5"}
+执行日期：20151210172044
+POST:[]
+执行日期：20151210172044
+GET:{"out_trade_no":"2015111914274","request_token":"requestToken","result":"success","trade_no":"2015111921001004410025675633","sign":"daba734d7ee97e024f855f388c03f858","sign_type":"MD5"}
+执行日期：20151215013813
+POST:{"service":"alipay.wap.trade.create.direct","sign":"344d2e39f740aa08ab218e9397d88548","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2015091598591<\/subject><trade_no>2015091500001000880060554401<\/trade_no><buyer_email>yangjing_8801@126.com<\/buyer_email><gmt_create>2015-09-15 09:37:51<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2015091598591<\/out_trade_no><notify_time>2015-12-15 09:38:13<\/notify_time><seller_id>2088021072742621<\/seller_id><trade_status>TRADE_FINISHED<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>154.00<\/total_fee><gmt_payment>2015-09-15 09:37:51<\/gmt_payment><seller_email>finance@beyondgo.cn<\/seller_email><gmt_close>2015-12-15 09:38:12<\/gmt_close><price>154.00<\/price><buyer_id>2088102126042882<\/buyer_id><notify_id>405b090081646fd75df0090a76f72c3e6w<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20151215013813
+GET:[]
+执行日期：20151216022217
+POST:{"service":"alipay.wap.trade.create.direct","sign":"11a12963c4aab46454ce9a9b4dd69bf0","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2015091681338<\/subject><trade_no>2015091600001000340064558145<\/trade_no><buyer_email>32643468@qq.com<\/buyer_email><gmt_create>2015-09-16 10:22:00<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2015091681338<\/out_trade_no><notify_time>2015-12-16 10:22:16<\/notify_time><seller_id>2088021072742621<\/seller_id><trade_status>TRADE_FINISHED<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>516.00<\/total_fee><gmt_payment>2015-09-16 10:22:01<\/gmt_payment><seller_email>finance@beyondgo.cn<\/seller_email><gmt_close>2015-12-16 10:22:16<\/gmt_close><price>516.00<\/price><buyer_id>2088002492130340<\/buyer_id><notify_id>a7b3144a4bd808025a2a09ccdaeb68733w<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20151216022217
+GET:[]
+执行日期：20151222064217
+POST:{"service":"alipay.wap.trade.create.direct","sign":"f5193569815126f95e52713c3bf70af1","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2015092284860<\/subject><trade_no>2015092200001000140061149954<\/trade_no><buyer_email>13984322866<\/buyer_email><gmt_create>2015-09-22 14:41:40<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2015092284860<\/out_trade_no><notify_time>2015-12-22 14:42:16<\/notify_time><seller_id>2088021072742621<\/seller_id><trade_status>TRADE_FINISHED<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>575.00<\/total_fee><gmt_payment>2015-09-22 14:41:58<\/gmt_payment><seller_email>finance@beyondgo.cn<\/seller_email><gmt_close>2015-12-22 14:42:16<\/gmt_close><price>575.00<\/price><buyer_id>2088502658366148<\/buyer_id><notify_id>1cd5fe6a28d1378ac80f33d65071207b2s<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20151222064217
+GET:[]
+执行日期：20151223105109
+POST:{"service":"alipay.wap.trade.create.direct","sign":"0db6e92a0bb9938e2f2720610c6d8087","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2015092322647<\/subject><trade_no>2015092300001000410026501897<\/trade_no><buyer_email>godblessdavehu@gmail.com<\/buyer_email><gmt_create>2015-09-23 18:50:09<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2015092322647<\/out_trade_no><notify_time>2015-12-23 18:51:08<\/notify_time><seller_id>2088021072742621<\/seller_id><trade_status>TRADE_FINISHED<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>1.00<\/total_fee><gmt_payment>2015-09-23 18:50:09<\/gmt_payment><seller_email>finance@beyondgo.cn<\/seller_email><gmt_close>2015-12-23 18:51:08<\/gmt_close><price>1.00<\/price><buyer_id>2088002077026411<\/buyer_id><notify_id>e1995e15bb9a91dd67c9c0ff592f70124a<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20151223105109
+GET:[]
+执行日期：20151225050214
+POST:{"service":"alipay.wap.trade.create.direct","sign":"32ebde835ea9d3b46dbdb33326ee7924","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2015092577490<\/subject><trade_no>2015092500001000900070349355<\/trade_no><buyer_email>kehuzijinbu001@alipay.com<\/buyer_email><gmt_create>2015-09-25 13:01:22<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2015092577490<\/out_trade_no><notify_time>2015-12-25 13:02:14<\/notify_time><seller_id>2088021072742621<\/seller_id><trade_status>TRADE_FINISHED<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>273.00<\/total_fee><gmt_payment>2015-09-25 13:01:51<\/gmt_payment><seller_email>finance@beyondgo.cn<\/seller_email><gmt_close>2015-12-25 13:02:14<\/gmt_close><price>273.00<\/price><buyer_id>2088401415536904<\/buyer_id><notify_id>793fa7a494d1abce5b4cfa676a02327070<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20151225050214
+GET:[]
+执行日期：20151227030516
+POST:{"service":"alipay.wap.trade.create.direct","sign":"32de8c85ffd8356b411d4e9f47d4bb9e","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2015092774097<\/subject><trade_no>2015092700001000140061304212<\/trade_no><buyer_email>13984322866<\/buyer_email><gmt_create>2015-09-27 11:04:14<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2015092774097<\/out_trade_no><notify_time>2015-12-27 11:05:16<\/notify_time><seller_id>2088021072742621<\/seller_id><trade_status>TRADE_FINISHED<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>627.00<\/total_fee><gmt_payment>2015-09-27 11:04:35<\/gmt_payment><seller_email>finance@beyondgo.cn<\/seller_email><gmt_close>2015-12-27 11:05:16<\/gmt_close><price>627.00<\/price><buyer_id>2088502658366148<\/buyer_id><notify_id>f4742369fae645708237bde614c750422s<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20151227030516
+GET:[]
+执行日期：20151230142115
+POST:{"service":"alipay.wap.trade.create.direct","sign":"a66ae8d1311a303f4582226b32e2cc29","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2015123049361<\/subject><trade_no>2015123021001004410051495876<\/trade_no><buyer_email>godblessdavehu@gmail.com<\/buyer_email><gmt_create>2015-12-30 22:21:14<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2015123049361<\/out_trade_no><notify_time>2015-12-30 22:21:15<\/notify_time><seller_id>2088021072742621<\/seller_id><trade_status>TRADE_SUCCESS<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>0.01<\/total_fee><gmt_payment>2015-12-30 22:21:15<\/gmt_payment><seller_email>finance@beyondgo.cn<\/seller_email><price>0.01<\/price><buyer_id>2088002077026411<\/buyer_id><notify_id>21cd4e56742b9a971b2ca04b5f5b87ej5w<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20151230142115
+GET:[]
+执行日期：20151230222120
+POST:[]
+执行日期：20151230222120
+GET:{"out_trade_no":"2015123049361","request_token":"requestToken","result":"success","trade_no":"2015123021001004410051495876","sign":"c4f53c6b018d084af53ec7de10c1498e","sign_type":"MD5"}
+执行日期：20160101045819
+POST:{"service":"alipay.wap.trade.create.direct","sign":"08ee25fd6755b75ba6bc5277ae323336","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2016010110858<\/subject><trade_no>2016010121001004390003534158<\/trade_no><buyer_email>lawwmen@163.com<\/buyer_email><gmt_create>2016-01-01 12:58:18<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2016010110858<\/out_trade_no><notify_time>2016-01-01 12:58:18<\/notify_time><seller_id>2088021072742621<\/seller_id><trade_status>TRADE_SUCCESS<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>298.00<\/total_fee><gmt_payment>2016-01-01 12:58:18<\/gmt_payment><seller_email>finance@beyondgo.cn<\/seller_email><price>298.00<\/price><buyer_id>2088002402683391<\/buyer_id><notify_id>9d17a451c152058618262dd9cb9feadj0c<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20160101045819
+GET:[]
+执行日期：20160101125822
+POST:[]
+执行日期：20160101125822
+GET:{"out_trade_no":"2016010110858","request_token":"requestToken","result":"success","trade_no":"2016010121001004390003534158","sign":"524da45d2c3fd94f1091b81b359308a9","sign_type":"MD5"}
+执行日期：20160101051501
+POST:{"service":"alipay.wap.trade.create.direct","sign":"e901908175ec5dae8ff2fff1b4a76884","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2016010176824<\/subject><trade_no>2016010121001004340002528613<\/trade_no><buyer_email>32643468@qq.com<\/buyer_email><gmt_create>2016-01-01 13:14:48<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2016010176824<\/out_trade_no><notify_time>2016-01-01 13:15:00<\/notify_time><seller_id>2088021072742621<\/seller_id><trade_status>TRADE_SUCCESS<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>656.00<\/total_fee><gmt_payment>2016-01-01 13:15:00<\/gmt_payment><seller_email>finance@beyondgo.cn<\/seller_email><price>656.00<\/price><buyer_id>2088002492130340<\/buyer_id><notify_id>d7a0b76c3c139d0604bcd63422e7282img<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20160101051501
+GET:[]
+执行日期：20160101131506
+POST:[]
+执行日期：20160101131506
+GET:{"out_trade_no":"2016010176824","request_token":"requestToken","result":"success","trade_no":"2016010121001004340002528613","sign":"c3abf5b3c3eb5af03d672f89a865ef34","sign_type":"MD5"}
+执行日期：20160101051836
+POST:{"service":"alipay.wap.trade.create.direct","sign":"8ed1f863354767c1863998b64815ec1e","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2016010148581<\/subject><trade_no>2016010121001004340003019243<\/trade_no><buyer_email>32643468@qq.com<\/buyer_email><gmt_create>2016-01-01 13:18:35<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2016010148581<\/out_trade_no><notify_time>2016-01-01 13:18:35<\/notify_time><seller_id>2088021072742621<\/seller_id><trade_status>TRADE_SUCCESS<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>97.00<\/total_fee><gmt_payment>2016-01-01 13:18:35<\/gmt_payment><seller_email>finance@beyondgo.cn<\/seller_email><price>97.00<\/price><buyer_id>2088002492130340<\/buyer_id><notify_id>eba96743a3f60631eab2b4a95c260f6img<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20160101051836
+GET:[]
+执行日期：20160101131838
+POST:[]
+执行日期：20160101131838
+GET:{"out_trade_no":"2016010148581","request_token":"requestToken","result":"success","trade_no":"2016010121001004340003019243","sign":"e2a5da9eeee559ae074e0a2f08c31a4f","sign_type":"MD5"}
+执行日期：20160105055757
+POST:{"service":"alipay.wap.trade.create.direct","sign":"bd39a8c78255e7269f8a2e56cbcaaf6f","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2016010573691<\/subject><trade_no>2016010521001004550076614608<\/trade_no><buyer_email>18685176134<\/buyer_email><gmt_create>2016-01-05 13:57:40<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2016010573691<\/out_trade_no><notify_time>2016-01-05 13:57:56<\/notify_time><seller_id>2088021072742621<\/seller_id><trade_status>TRADE_SUCCESS<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>237.00<\/total_fee><gmt_payment>2016-01-05 13:57:55<\/gmt_payment><seller_email>finance@beyondgo.cn<\/seller_email><price>237.00<\/price><buyer_id>2088802102309551<\/buyer_id><notify_id>7708431956951a6d4578fb93fa55ae9k8s<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20160105055757
+GET:[]
+执行日期：20160105135800
+POST:[]
+执行日期：20160105135800
+GET:{"out_trade_no":"2016010573691","request_token":"requestToken","result":"success","trade_no":"2016010521001004550076614608","sign":"31139d1e9e0adce9905294a39b681545","sign_type":"MD5"}
+执行日期：20160107063052
+POST:{"service":"alipay.wap.trade.create.direct","sign":"474a8b998fb8785fc60ead317f64eaea","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2016010718601<\/subject><trade_no>2016010721001004100008183371<\/trade_no><buyer_email>56993403@qq.com<\/buyer_email><gmt_create>2016-01-07 14:30:50<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2016010718601<\/out_trade_no><notify_time>2016-01-07 14:30:52<\/notify_time><seller_id>2088021072742621<\/seller_id><trade_status>TRADE_SUCCESS<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>717.00<\/total_fee><gmt_payment>2016-01-07 14:30:51<\/gmt_payment><seller_email>finance@beyondgo.cn<\/seller_email><price>717.00<\/price><buyer_id>2088902372418103<\/buyer_id><notify_id>64d76f85833c39f38f8eca89f91e97cgrs<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20160107063052
+GET:[]
+执行日期：20160107143105
+POST:[]
+执行日期：20160107143105
+GET:{"out_trade_no":"2016010718601","request_token":"requestToken","result":"success","trade_no":"2016010721001004100008183371","sign":"eeb61ae62284c80cc170a458c74b2c12","sign_type":"MD5"}
+执行日期：20160107135139
+POST:{"service":"alipay.wap.trade.create.direct","sign":"0e1e1845f34f852f52bd630da8c3bead","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2016010705827<\/subject><trade_no>2016010721001004020078595316<\/trade_no><buyer_email>15285543570<\/buyer_email><gmt_create>2016-01-07 21:51:37<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2016010705827<\/out_trade_no><notify_time>2016-01-07 21:51:38<\/notify_time><seller_id>2088021072742621<\/seller_id><trade_status>TRADE_SUCCESS<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>269.00<\/total_fee><gmt_payment>2016-01-07 21:51:38<\/gmt_payment><seller_email>finance@beyondgo.cn<\/seller_email><price>269.00<\/price><buyer_id>2088702727429028<\/buyer_id><notify_id>69ae259504009cb4b9dadb4dcd00656g5k<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20160107135139
+GET:[]
+执行日期：20160111095120
+POST:{"service":"alipay.wap.trade.create.direct","sign":"5ce0fa5c716d12192aa218368407c060","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2016011104958<\/subject><trade_no>2016011121001004570081491774<\/trade_no><buyer_email>49614764@qq.com<\/buyer_email><gmt_create>2016-01-11 17:50:56<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2016011104958<\/out_trade_no><notify_time>2016-01-11 17:51:19<\/notify_time><seller_id>2088021072742621<\/seller_id><trade_status>TRADE_SUCCESS<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>278.00<\/total_fee><gmt_payment>2016-01-11 17:51:19<\/gmt_payment><seller_email>finance@beyondgo.cn<\/seller_email><price>278.00<\/price><buyer_id>2088002815238577<\/buyer_id><notify_id>344de8fa786a99fd15acc0ddac0976ekec<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20160111095120
+GET:[]
+执行日期：20160111175132
+POST:[]
+执行日期：20160111175132
+GET:{"out_trade_no":"2016011104958","request_token":"requestToken","result":"success","trade_no":"2016011121001004570081491774","sign":"841221528660d85ec2ccd623b578a69e","sign_type":"MD5"}
+执行日期：20160112105801
+POST:{"service":"alipay.wap.trade.create.direct","sign":"337dc4752d8e6a805e9ea4b2f16fa2e3","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2016011209042<\/subject><trade_no>2016011221001004340055119929<\/trade_no><buyer_email>32643468@qq.com<\/buyer_email><gmt_create>2016-01-12 18:57:49<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2016011209042<\/out_trade_no><notify_time>2016-01-12 18:58:01<\/notify_time><seller_id>2088021072742621<\/seller_id><trade_status>TRADE_SUCCESS<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>1870.00<\/total_fee><gmt_payment>2016-01-12 18:58:00<\/gmt_payment><seller_email>finance@beyondgo.cn<\/seller_email><price>1870.00<\/price><buyer_id>2088002492130340<\/buyer_id><notify_id>bd3241ee0435882bc77582def4b5ab5img<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20160112105801
+GET:[]
+执行日期：20160112185807
+POST:[]
+执行日期：20160112185807
+GET:{"out_trade_no":"2016011209042","request_token":"requestToken","result":"success","trade_no":"2016011221001004340055119929","sign":"50b18e86e3e4a681ee2c17840a66d2bc","sign_type":"MD5"}
+执行日期：20160113071454
+POST:{"service":"alipay.wap.trade.create.direct","sign":"bcb8088f747f26c62ef954c5291e56e4","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2016011379145<\/subject><trade_no>2016011321001004190098769759<\/trade_no><buyer_email>emao0806@sina.com.cn<\/buyer_email><gmt_create>2016-01-13 15:14:35<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2016011379145<\/out_trade_no><notify_time>2016-01-13 15:14:53<\/notify_time><seller_id>2088021072742621<\/seller_id><trade_status>TRADE_SUCCESS<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>205.00<\/total_fee><gmt_payment>2016-01-13 15:14:53<\/gmt_payment><seller_email>finance@beyondgo.cn<\/seller_email><price>205.00<\/price><buyer_id>2088002092008191<\/buyer_id><notify_id>f7a8c5ddfa23bec8350ba3f2f65b114hgs<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20160113071454
+GET:[]
+执行日期：20160113151458
+POST:[]
+执行日期：20160113151458
+GET:{"out_trade_no":"2016011379145","request_token":"requestToken","result":"success","trade_no":"2016011321001004190098769759","sign":"41bdcee12fb3d683e5a76c9577ebba23","sign_type":"MD5"}
+执行日期：20160114080513
+POST:{"service":"alipay.wap.trade.create.direct","sign":"23733a0f004d0f58fdfb961a36b20dc2","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2015101528826<\/subject><trade_no>2015101500001000480064547680<\/trade_no><buyer_email>luoshiyang@gmail.com<\/buyer_email><gmt_create>2015-10-15 16:04:35<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2015101528826<\/out_trade_no><notify_time>2016-01-14 16:05:12<\/notify_time><seller_id>2088021072742621<\/seller_id><trade_status>TRADE_FINISHED<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>1.00<\/total_fee><gmt_payment>2015-10-15 16:04:36<\/gmt_payment><seller_email>finance@beyondgo.cn<\/seller_email><gmt_close>2016-01-14 16:05:12<\/gmt_close><price>1.00<\/price><buyer_id>2088002770705484<\/buyer_id><notify_id>9d744ffcf3d24b223ee3cd20b99cc3274o<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20160114080513
+GET:[]
+执行日期：20160114115511
+POST:{"service":"alipay.wap.trade.create.direct","sign":"3b78c95b04e2d1b4bbbf1f626e0fe623","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2015101513772<\/subject><trade_no>2015101500001000050066106577<\/trade_no><buyer_email>81439128@qq.com<\/buyer_email><gmt_create>2015-10-15 19:54:46<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2015101513772<\/out_trade_no><notify_time>2016-01-14 19:55:11<\/notify_time><seller_id>2088021072742621<\/seller_id><trade_status>TRADE_FINISHED<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>1351.00<\/total_fee><gmt_payment>2015-10-15 19:54:46<\/gmt_payment><seller_email>finance@beyondgo.cn<\/seller_email><gmt_close>2016-01-14 19:55:10<\/gmt_close><price>1351.00<\/price><buyer_id>2088812982950053<\/buyer_id><notify_id>3422198d20bd471f77850bdd2fa8a2a72a<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20160114115511
+GET:[]
+执行日期：20160114163649
+POST:{"service":"alipay.wap.trade.create.direct","sign":"514e6533761aabd7e2a8da9aaf1063bb","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2016011402678<\/subject><trade_no>2016011521001004330040928668<\/trade_no><buyer_email>18685045243<\/buyer_email><gmt_create>2016-01-15 00:34:18<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2016011402678<\/out_trade_no><notify_time>2016-01-15 00:36:48<\/notify_time><seller_id>2088021072742621<\/seller_id><trade_status>TRADE_SUCCESS<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>464.00<\/total_fee><gmt_payment>2016-01-15 00:36:48<\/gmt_payment><seller_email>finance@beyondgo.cn<\/seller_email><price>464.00<\/price><buyer_id>2088802490641336<\/buyer_id><notify_id>cfecbd7ccbc1bf2a1572b3e15db51a5ijo<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20160114163649
+GET:[]
+执行日期：20160116064925
+POST:{"service":"alipay.wap.trade.create.direct","sign":"13dd8fdadd5cec56e25852292867d8a7","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2016011644202<\/subject><trade_no>2016011621001004020099562487<\/trade_no><buyer_email>15285543570<\/buyer_email><gmt_create>2016-01-16 14:40:48<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2016011644202<\/out_trade_no><notify_time>2016-01-16 14:49:24<\/notify_time><seller_id>2088021072742621<\/seller_id><trade_status>TRADE_SUCCESS<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>488.00<\/total_fee><gmt_payment>2016-01-16 14:49:24<\/gmt_payment><seller_email>finance@beyondgo.cn<\/seller_email><price>488.00<\/price><buyer_id>2088702727429028<\/buyer_id><notify_id>7161c7ab7aec79e19740a963b332da8g5k<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20160116064925
+GET:[]
+执行日期：20160116144933
+POST:[]
+执行日期：20160116144933
+GET:{"out_trade_no":"2016011644202","request_token":"requestToken","result":"success","trade_no":"2016011621001004020099562487","sign":"c0858db063386e6ea0309b733da86ecb","sign_type":"MD5"}
+执行日期：20160118105857
+POST:{"service":"alipay.wap.trade.create.direct","sign":"877eded6adfefda9409801d31e79967f","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2016011821165<\/subject><trade_no>2016011821001004910021292100<\/trade_no><buyer_email>liqing418@qq.com<\/buyer_email><gmt_create>2016-01-18 18:58:36<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2016011821165<\/out_trade_no><notify_time>2016-01-18 18:58:56<\/notify_time><seller_id>2088021072742621<\/seller_id><trade_status>TRADE_SUCCESS<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>570.00<\/total_fee><gmt_payment>2016-01-18 18:58:56<\/gmt_payment><seller_email>finance@beyondgo.cn<\/seller_email><price>570.00<\/price><buyer_id>2088202624626918<\/buyer_id><notify_id>17ecfe2a20958eafc52605a4cb45564n0s<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20160118105857
+GET:[]
+执行日期：20160118185902
+POST:[]
+执行日期：20160118185902
+GET:{"out_trade_no":"2016011821165","request_token":"requestToken","result":"success","trade_no":"2016011821001004910021292100","sign":"7138f814a67b53e954e9dff8be8c2be4","sign_type":"MD5"}
+执行日期：20160119045310
+POST:{"service":"alipay.wap.trade.create.direct","sign":"996bf532f0040ab46877bb26a228d9f7","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2015102040660<\/subject><trade_no>2015102000001000540065549853<\/trade_no><buyer_email>preciousgq@sina.com<\/buyer_email><gmt_create>2015-10-20 12:52:20<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2015102040660<\/out_trade_no><notify_time>2016-01-19 12:53:10<\/notify_time><seller_id>2088021072742621<\/seller_id><trade_status>TRADE_FINISHED<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>338.00<\/total_fee><gmt_payment>2015-10-20 12:52:20<\/gmt_payment><seller_email>finance@beyondgo.cn<\/seller_email><gmt_close>2016-01-19 12:53:09<\/gmt_close><price>338.00<\/price><buyer_id>2088202889934544<\/buyer_id><notify_id>b228767f510b88069f4e9d91c7155e8350<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20160119045310
+GET:[]
+执行日期：20160119083231
+POST:{"service":"alipay.wap.trade.create.direct","sign":"6e432e3b2b1d9fcc31060964d8de2ab7","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2016011977929<\/subject><trade_no>2016011921001004120037970676<\/trade_no><buyer_email>15985560789<\/buyer_email><gmt_create>2016-01-19 16:32:20<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2016011977929<\/out_trade_no><notify_time>2016-01-19 16:32:31<\/notify_time><seller_id>2088021072742621<\/seller_id><trade_status>TRADE_SUCCESS<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>398.00<\/total_fee><gmt_payment>2016-01-19 16:32:31<\/gmt_payment><seller_email>finance@beyondgo.cn<\/seller_email><price>398.00<\/price><buyer_id>2088212544783129<\/buyer_id><notify_id>f0808ae94c6e4ef7287845afe171c71gxc<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20160119083231
+GET:[]
+执行日期：20160119163236
+POST:[]
+执行日期：20160119163236
+GET:{"out_trade_no":"2016011977929","request_token":"requestToken","result":"success","trade_no":"2016011921001004120037970676","sign":"d3b323b86f59b3bf056eb79d43fcd99e","sign_type":"MD5"}
+执行日期：20160120083742
+POST:[]
+执行日期：20160120083742
+GET:{"out_trade_no":"2016011821165","request_token":"requestToken","result":"success","trade_no":"2016011821001004910021292100","sign":"7138f814a67b53e954e9dff8be8c2be4","sign_type":"MD5"}
+执行日期：20160120062952
+POST:{"service":"alipay.wap.trade.create.direct","sign":"ac5b24bdee92ae7522e8f050212391c4","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2016012005365<\/subject><trade_no>2016012021001004370073074933<\/trade_no><buyer_email>yun_23124927@qq.com<\/buyer_email><gmt_create>2016-01-20 14:29:31<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2016012005365<\/out_trade_no><notify_time>2016-01-20 14:29:51<\/notify_time><seller_id>2088021072742621<\/seller_id><trade_status>TRADE_SUCCESS<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>376.00<\/total_fee><gmt_payment>2016-01-20 14:29:50<\/gmt_payment><seller_email>finance@beyondgo.cn<\/seller_email><price>376.00<\/price><buyer_id>2088002622110372<\/buyer_id><notify_id>02fe4e2bcfd7b608b6840974a75c4beius<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20160120062952
+GET:[]
+执行日期：20160120142954
+POST:[]
+执行日期：20160120142954
+GET:{"out_trade_no":"2016012005365","request_token":"requestToken","result":"success","trade_no":"2016012021001004370073074933","sign":"336dac7ea6d56210d30ed2f23beac9fe","sign_type":"MD5"}
+执行日期：20160122084329
+POST:[]
+执行日期：20160122084329
+GET:{"out_trade_no":"2016011821165","request_token":"requestToken","result":"success","trade_no":"2016011821001004910021292100","sign":"7138f814a67b53e954e9dff8be8c2be4","sign_type":"MD5"}
+执行日期：20160122130148
+POST:{"service":"alipay.wap.trade.create.direct","sign":"2737b5e2f50932ba672c706171a3f3d5","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2016012291367<\/subject><trade_no>2016012221001004190035377150<\/trade_no><buyer_email>emao0806@sina.com.cn<\/buyer_email><gmt_create>2016-01-22 21:01:47<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2016012291367<\/out_trade_no><notify_time>2016-01-22 21:01:48<\/notify_time><seller_id>2088021072742621<\/seller_id><trade_status>TRADE_SUCCESS<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>488.00<\/total_fee><gmt_payment>2016-01-22 21:01:48<\/gmt_payment><seller_email>finance@beyondgo.cn<\/seller_email><price>488.00<\/price><buyer_id>2088002092008191<\/buyer_id><notify_id>498c31ad9bc6a718d93a14da1e0b66bhgs<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20160122130148
+GET:[]
+执行日期：20160122210152
+POST:[]
+执行日期：20160122210152
+GET:{"out_trade_no":"2016012291367","request_token":"requestToken","result":"success","trade_no":"2016012221001004190035377150","sign":"6af2ac1a72e01d08d7b0e15524edcf9e","sign_type":"MD5"}
+执行日期：20160122232226
+POST:{"service":"alipay.wap.trade.create.direct","sign":"7755c9bed6fd467611daf9d3e4f3358c","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2016012263392<\/subject><trade_no>2016012300001000020067416322<\/trade_no><buyer_email>15285543570<\/buyer_email><gmt_create>2016-01-23 03:46:39<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2016012263392<\/out_trade_no><notify_time>2016-01-23 07:22:26<\/notify_time><seller_id>2088021072742621<\/seller_id><trade_status>TRADE_SUCCESS<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>617.00<\/total_fee><gmt_payment>2016-01-23 07:22:25<\/gmt_payment><seller_email>finance@beyondgo.cn<\/seller_email><price>617.00<\/price><buyer_id>2088702727429028<\/buyer_id><notify_id>fe9c9c13d3b35bf180160379c7d0055024<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20160122232226
+GET:[]
+执行日期：20160123072234
+POST:[]
+执行日期：20160123072234
+GET:{"out_trade_no":"2016012263392","request_token":"requestToken","result":"success","trade_no":"2016012300001000020067416322","sign":"c9911541dd00346be2b8642f3aede687","sign_type":"MD5"}
+执行日期：20160123063306
+POST:{"service":"alipay.wap.trade.create.direct","sign":"3dc34c6219de78b73ff02b772b788eb6","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2016012384711<\/subject><trade_no>2016012321001004190048588510<\/trade_no><buyer_email>emao0806@sina.com.cn<\/buyer_email><gmt_create>2016-01-23 14:33:04<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2016012384711<\/out_trade_no><notify_time>2016-01-23 14:33:05<\/notify_time><seller_id>2088021072742621<\/seller_id><trade_status>TRADE_SUCCESS<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>726.00<\/total_fee><gmt_payment>2016-01-23 14:33:05<\/gmt_payment><seller_email>finance@beyondgo.cn<\/seller_email><price>726.00<\/price><buyer_id>2088002092008191<\/buyer_id><notify_id>859a0b6c8afc738e804340bc450b7b0hgs<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20160123063306
+GET:[]
+执行日期：20160123143307
+POST:[]
+执行日期：20160123143307
+GET:{"out_trade_no":"2016012384711","request_token":"requestToken","result":"success","trade_no":"2016012321001004190048588510","sign":"97b82b112cc149a2fa08b46089c996d4","sign_type":"MD5"}
+执行日期：20160124113516
+POST:{"service":"alipay.wap.trade.create.direct","sign":"f37555c7dbe531471f29e8a906ea678f","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2016012461412<\/subject><trade_no>2016012421001004860016017257<\/trade_no><buyer_email>18685263737<\/buyer_email><gmt_create>2016-01-24 19:33:17<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2016012461412<\/out_trade_no><notify_time>2016-01-24 19:35:16<\/notify_time><seller_id>2088021072742621<\/seller_id><trade_status>TRADE_SUCCESS<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>777.00<\/total_fee><gmt_payment>2016-01-24 19:35:15<\/gmt_payment><seller_email>finance@beyondgo.cn<\/seller_email><price>777.00<\/price><buyer_id>2088312215134862<\/buyer_id><notify_id>9018a9d8ec302827d4b682cee5a8248mmw<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20160124113516
+GET:[]
+执行日期：20160124193524
+POST:[]
+执行日期：20160124193524
+GET:{"out_trade_no":"2016012461412","request_token":"requestToken","result":"success","trade_no":"2016012421001004860016017257","sign":"d336f4794f750e650003b2dddcda45eb","sign_type":"MD5"}
+执行日期：20160126090238
+POST:{"service":"alipay.wap.trade.create.direct","sign":"b2764a599bf61d911bd88adff597fe82","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2016012607086<\/subject><trade_no>2016012621001004370089942374<\/trade_no><buyer_email>yun_23124927@qq.com<\/buyer_email><gmt_create>2016-01-26 17:02:37<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2016012607086<\/out_trade_no><notify_time>2016-01-26 17:02:38<\/notify_time><seller_id>2088021072742621<\/seller_id><trade_status>TRADE_SUCCESS<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>139.00<\/total_fee><gmt_payment>2016-01-26 17:02:38<\/gmt_payment><seller_email>finance@beyondgo.cn<\/seller_email><price>139.00<\/price><buyer_id>2088002622110372<\/buyer_id><notify_id>149ad4f5bb951755258cf5dbd71e03cius<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20160126090238
+GET:[]
+执行日期：20160126170241
+POST:[]
+执行日期：20160126170241
+GET:{"out_trade_no":"2016012607086","request_token":"requestToken","result":"success","trade_no":"2016012621001004370089942374","sign":"1499bf87dda797f1c18b14b771e073bb","sign_type":"MD5"}
+执行日期：20160202132214
+POST:{"service":"alipay.wap.trade.create.direct","sign":"9fe9f7b21e4f3f24b9b01c291d113f57","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2016020244282<\/subject><trade_no>2016020221001004120245942766<\/trade_no><buyer_email>15985560789<\/buyer_email><gmt_create>2016-02-02 21:22:13<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2016020244282<\/out_trade_no><notify_time>2016-02-02 21:22:14<\/notify_time><seller_id>2088021072742621<\/seller_id><trade_status>TRADE_SUCCESS<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>796.00<\/total_fee><gmt_payment>2016-02-02 21:22:14<\/gmt_payment><seller_email>finance@beyondgo.cn<\/seller_email><price>796.00<\/price><buyer_id>2088212544783129<\/buyer_id><notify_id>3a902434d6dc1d0443d41d5a5fc6e18gxe<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20160202132214
+GET:[]
+执行日期：20160202212222
+POST:[]
+执行日期：20160202212222
+GET:{"out_trade_no":"2016020244282","request_token":"requestToken","result":"success","trade_no":"2016020221001004120245942766","sign":"eedeadf06940b9989b3b45dbc7f0d99b","sign_type":"MD5"}
+执行日期：20160203130000
+POST:{"service":"alipay.wap.trade.create.direct","sign":"874e784ef25ef065b122426f44c6359a","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2016020371218<\/subject><trade_no>2016020321001004990064051766<\/trade_no><buyer_email>58363930@qq.com<\/buyer_email><gmt_create>2016-02-03 20:59:38<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2016020371218<\/out_trade_no><notify_time>2016-02-03 21:00:00<\/notify_time><seller_id>2088021072742621<\/seller_id><trade_status>TRADE_SUCCESS<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>84.00<\/total_fee><gmt_payment>2016-02-03 21:00:00<\/gmt_payment><seller_email>finance@beyondgo.cn<\/seller_email><price>84.00<\/price><buyer_id>2088002342086991<\/buyer_id><notify_id>4467b67ad1f31d0eb75424ce4fe7578nn0<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20160203130000
+GET:[]
+执行日期：20160203210003
+POST:[]
+执行日期：20160203210003
+GET:{"out_trade_no":"2016020371218","request_token":"requestToken","result":"success","trade_no":"2016020321001004990064051766","sign":"ddf56e3899baa77319d7ae35f1c4b2dd","sign_type":"MD5"}
+执行日期：20160209092518
+POST:[]
+执行日期：20160209092518
+GET:{"out_trade_no":"2016011644202","request_token":"requestToken","result":"success","trade_no":"2016011621001004020099562487","sign":"c0858db063386e6ea0309b733da86ecb","sign_type":"MD5"}
+执行日期：20160211113410
+POST:{"service":"alipay.wap.trade.create.direct","sign":"5572d049406eddf764d6b9a05cf1f7fe","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2016021123604<\/subject><trade_no>2016021121001004840295416536<\/trade_no><buyer_email>15308500779<\/buyer_email><gmt_create>2016-02-11 12:53:39<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2016021123604<\/out_trade_no><notify_time>2016-02-11 19:34:09<\/notify_time><seller_id>2088021072742621<\/seller_id><trade_status>TRADE_SUCCESS<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>1452.00<\/total_fee><gmt_payment>2016-02-11 19:34:08<\/gmt_payment><seller_email>finance@beyondgo.cn<\/seller_email><price>1452.00<\/price><buyer_id>2088902756613845<\/buyer_id><notify_id>b8e5866bf5057eb6a90b98dc2dece85mhe<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20160211113410
+GET:[]
+执行日期：20160211193423
+POST:[]
+执行日期：20160211193423
+GET:{"out_trade_no":"2016021123604","request_token":"requestToken","result":"success","trade_no":"2016021121001004840295416536","sign":"ebdc5ab02b4e8e4c9fcafd38739340f1","sign_type":"MD5"}
+执行日期：20160212110439
+POST:{"service":"alipay.wap.trade.create.direct","sign":"38bf215653d1444506fb6f0fc85e382f","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2015111379813<\/subject><trade_no>2015111321001004330030046612<\/trade_no><buyer_email>18685045243<\/buyer_email><gmt_create>2015-11-13 19:04:36<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2015111379813<\/out_trade_no><notify_time>2016-02-12 19:04:38<\/notify_time><seller_id>2088021072742621<\/seller_id><trade_status>TRADE_FINISHED<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>144.00<\/total_fee><gmt_payment>2015-11-13 19:04:36<\/gmt_payment><seller_email>finance@beyondgo.cn<\/seller_email><gmt_close>2016-02-12 19:04:38<\/gmt_close><price>144.00<\/price><buyer_id>2088802490641336<\/buyer_id><notify_id>043564124fb54f10e792e011e16b34aijo<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20160212110439
+GET:[]
+执行日期：20160214095206
+POST:{"service":"alipay.wap.trade.create.direct","sign":"7d018acede40bb618a37b344b84f7cbe","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2016021464006<\/subject><trade_no>2016021421001004910295356718<\/trade_no><buyer_email>liqing418@qq.com<\/buyer_email><gmt_create>2016-02-14 17:52:05<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2016021464006<\/out_trade_no><notify_time>2016-02-14 17:52:06<\/notify_time><seller_id>2088021072742621<\/seller_id><trade_status>TRADE_SUCCESS<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>123.00<\/total_fee><gmt_payment>2016-02-14 17:52:06<\/gmt_payment><seller_email>finance@beyondgo.cn<\/seller_email><price>123.00<\/price><buyer_id>2088202624626918<\/buyer_id><notify_id>b3f3b3f012f21e0ea8bc6e3d40c1c29n0u<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20160214095206
+GET:[]
+执行日期：20160214175216
+POST:[]
+执行日期：20160214175216
+GET:{"out_trade_no":"2016021464006","request_token":"requestToken","result":"success","trade_no":"2016021421001004910295356718","sign":"03f82c74483fedbe1ac443c5bef07bc1","sign_type":"MD5"}
+执行日期：20160214141013
+POST:{"service":"alipay.wap.trade.create.direct","sign":"05060a940774e1f8c7ca053cfe214b58","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2016021409508<\/subject><trade_no>2016021421001004720233499287<\/trade_no><buyer_email>x.latee115@qq.com<\/buyer_email><gmt_create>2016-02-14 22:09:57<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2016021409508<\/out_trade_no><notify_time>2016-02-14 22:10:12<\/notify_time><seller_id>2088021072742621<\/seller_id><trade_status>TRADE_SUCCESS<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>178.00<\/total_fee><gmt_payment>2016-02-14 22:10:12<\/gmt_payment><seller_email>finance@beyondgo.cn<\/seller_email><price>178.00<\/price><buyer_id>2088002409086726<\/buyer_id><notify_id>8e2f82cf07b7f971f4cd104023696fflk2<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20160214141013
+GET:[]
+执行日期：20160214221016
+POST:[]
+执行日期：20160214221016
+GET:{"out_trade_no":"2016021409508","request_token":"requestToken","result":"success","trade_no":"2016021421001004720233499287","sign":"d7241095fb4ba1084d2b8ad75153f878","sign_type":"MD5"}
+执行日期：20160216011453
+POST:{"service":"alipay.wap.trade.create.direct","sign":"7c0df1905aafb667dacb4bb019413038","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2016021666970<\/subject><trade_no>2016021621001004020255825055<\/trade_no><buyer_email>15285543570<\/buyer_email><gmt_create>2016-02-16 09:14:10<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2016021666970<\/out_trade_no><notify_time>2016-02-16 09:14:53<\/notify_time><seller_id>2088021072742621<\/seller_id><trade_status>TRADE_SUCCESS<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>1614.00<\/total_fee><gmt_payment>2016-02-16 09:14:53<\/gmt_payment><seller_email>finance@beyondgo.cn<\/seller_email><price>1614.00<\/price><buyer_id>2088702727429028<\/buyer_id><notify_id>4dc0866edad2c40bfdb194e73f9c297g5m<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20160216011453
+GET:[]
+执行日期：20160216091457
+POST:[]
+执行日期：20160216091457
+GET:{"out_trade_no":"2016021666970","request_token":"requestToken","result":"success","trade_no":"2016021621001004020255825055","sign":"8735349556c7e59fc464b3761a3db9d4","sign_type":"MD5"}
+执行日期：20160216034343
+POST:{"service":"alipay.wap.trade.create.direct","sign":"a84f89afcaca64510887133171172c81","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2016021666118<\/subject><trade_no>2016021621001004020260319193<\/trade_no><buyer_email>15285543570<\/buyer_email><gmt_create>2016-02-16 11:41:12<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2016021666118<\/out_trade_no><notify_time>2016-02-16 11:43:42<\/notify_time><seller_id>2088021072742621<\/seller_id><trade_status>TRADE_SUCCESS<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>1614.00<\/total_fee><gmt_payment>2016-02-16 11:43:42<\/gmt_payment><seller_email>finance@beyondgo.cn<\/seller_email><price>1614.00<\/price><buyer_id>2088702727429028<\/buyer_id><notify_id>0069703eb456f53a1560ed81a3d808eg5m<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20160216034343
+GET:[]
+执行日期：20160216173058
+POST:[]
+执行日期：20160216173058
+GET:{"out_trade_no":"2016012263392","request_token":"requestToken","result":"success","trade_no":"2016012300001000020067416322","sign":"c9911541dd00346be2b8642f3aede687","sign_type":"MD5"}
+执行日期：20160218094532
+POST:{"service":"alipay.wap.trade.create.direct","sign":"962c8f527c0d3419b4ef1a7672372ee6","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2015111914274<\/subject><trade_no>2015111921001004410025675633<\/trade_no><buyer_email>godblessdavehu@gmail.com<\/buyer_email><gmt_create>2015-11-19 17:45:00<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2015111914274<\/out_trade_no><notify_time>2016-02-18 17:45:31<\/notify_time><seller_id>2088021072742621<\/seller_id><trade_status>TRADE_FINISHED<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>0.01<\/total_fee><gmt_payment>2015-11-19 17:45:11<\/gmt_payment><seller_email>finance@beyondgo.cn<\/seller_email><gmt_close>2016-02-18 17:45:31<\/gmt_close><price>0.01<\/price><buyer_id>2088002077026411<\/buyer_id><notify_id>2b644d3a0de968cd06c13ed28a6021aj5w<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20160218094532
+GET:[]
+执行日期：20160221124237
+POST:{"service":"alipay.wap.trade.create.direct","sign":"f8ff2a171e8040c44ba586fce2c8c7d1","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2016022187506<\/subject><trade_no>2016022121001004990206172215<\/trade_no><buyer_email>dupeng85@126.com<\/buyer_email><gmt_create>2016-02-21 20:42:09<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2016022187506<\/out_trade_no><notify_time>2016-02-21 20:42:37<\/notify_time><seller_id>2088021072742621<\/seller_id><trade_status>TRADE_SUCCESS<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>238.00<\/total_fee><gmt_payment>2016-02-21 20:42:36<\/gmt_payment><seller_email>finance@beyondgo.cn<\/seller_email><price>238.00<\/price><buyer_id>2088002978546991<\/buyer_id><notify_id>395dd6488bc0e9f533a2631d5efb861nn2<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20160221124237
+GET:[]
+执行日期：20160221204246
+POST:[]
+执行日期：20160221204246
+GET:{"out_trade_no":"2016022187506","request_token":"requestToken","result":"success","trade_no":"2016022121001004990206172215","sign":"b91e5ec3fc91866ad04d08332785eac1","sign_type":"MD5"}
+执行日期：20160221180454
+POST:{"service":"alipay.wap.trade.create.direct","sign":"84fb15374c01533a753bf97eb0b03ebe","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2016022191951<\/subject><trade_no>2016022221001004140269007773<\/trade_no><buyer_email>13984322866<\/buyer_email><gmt_create>2016-02-22 02:04:36<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2016022191951<\/out_trade_no><notify_time>2016-02-22 02:04:54<\/notify_time><seller_id>2088021072742621<\/seller_id><trade_status>TRADE_SUCCESS<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>578.00<\/total_fee><gmt_payment>2016-02-22 02:04:53<\/gmt_payment><seller_email>finance@beyondgo.cn<\/seller_email><price>578.00<\/price><buyer_id>2088502658366148<\/buyer_id><notify_id>be6f2934a1ba8f8e9bcaae073122a78h2y<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20160221180454
+GET:[]
+执行日期：20160221181620
+POST:{"service":"alipay.wap.trade.create.direct","sign":"2f53b2b274036e9470236242ec1e38ec","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2016022105814<\/subject><trade_no>2016022221001004140268762024<\/trade_no><buyer_email>13984322866<\/buyer_email><gmt_create>2016-02-22 02:16:00<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2016022105814<\/out_trade_no><notify_time>2016-02-22 02:16:20<\/notify_time><seller_id>2088021072742621<\/seller_id><trade_status>TRADE_SUCCESS<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>259.00<\/total_fee><gmt_payment>2016-02-22 02:16:19<\/gmt_payment><seller_email>finance@beyondgo.cn<\/seller_email><price>259.00<\/price><buyer_id>2088502658366148<\/buyer_id><notify_id>457e5aa2f6376106338a02805dbf620h2y<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20160221181620
+GET:[]
+执行日期：20160222021018
+POST:{"service":"alipay.wap.trade.create.direct","sign":"62d810c0bf3a7da20236001758ed8d8a","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2016022287376<\/subject><trade_no>2016022221001004780240203361<\/trade_no><buyer_email>372572223@qq.com<\/buyer_email><gmt_create>2016-02-22 10:10:01<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2016022287376<\/out_trade_no><notify_time>2016-02-22 10:10:16<\/notify_time><seller_id>2088021072742621<\/seller_id><trade_status>TRADE_SUCCESS<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>910.00<\/total_fee><gmt_payment>2016-02-22 10:10:16<\/gmt_payment><seller_email>finance@beyondgo.cn<\/seller_email><price>910.00<\/price><buyer_id>2088102048407781<\/buyer_id><notify_id>a4e3aa0ce9892dd71abf80b1685dacfm0q<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20160222021018
+GET:[]
+执行日期：20160222101020
+POST:[]
+执行日期：20160222101020
+GET:{"out_trade_no":"2016022287376","request_token":"requestToken","result":"success","trade_no":"2016022221001004780240203361","sign":"9c56d2123af89bae6a462a92f7691519","sign_type":"MD5"}
+执行日期：20160222092732
+POST:{"service":"alipay.wap.trade.create.direct","sign":"9798952de682343b69fc8a930940749e","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2016022267700<\/subject><trade_no>2016022221001004850201913567<\/trade_no><buyer_email>13809455531<\/buyer_email><gmt_create>2016-02-22 17:27:22<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2016022267700<\/out_trade_no><notify_time>2016-02-22 17:27:32<\/notify_time><seller_id>2088021072742621<\/seller_id><trade_status>TRADE_SUCCESS<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>824.00<\/total_fee><gmt_payment>2016-02-22 17:27:32<\/gmt_payment><seller_email>finance@beyondgo.cn<\/seller_email><price>824.00<\/price><buyer_id>2088802208324850<\/buyer_id><notify_id>7fa18c064ae352f46711dc466f0a5f8mk6<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20160222092732
+GET:[]
+执行日期：20160222172735
+POST:[]
+执行日期：20160222172735
+GET:{"out_trade_no":"2016022267700","request_token":"requestToken","result":"success","trade_no":"2016022221001004850201913567","sign":"865e0c287d282a6645cf834bb535aa6e","sign_type":"MD5"}
+执行日期：20160223115941
+POST:{"service":"alipay.wap.trade.create.direct","sign":"4c591f99c25df1e07eec25f71619df3c","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2016022337604<\/subject><trade_no>2016022321001004040264229769<\/trade_no><buyer_email>15185223089<\/buyer_email><gmt_create>2016-02-23 19:59:25<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2016022337604<\/out_trade_no><notify_time>2016-02-23 19:59:41<\/notify_time><seller_id>2088021072742621<\/seller_id><trade_status>TRADE_SUCCESS<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>228.00<\/total_fee><gmt_payment>2016-02-23 19:59:40<\/gmt_payment><seller_email>finance@beyondgo.cn<\/seller_email><price>228.00<\/price><buyer_id>2088222201213047<\/buyer_id><notify_id>e191b8798909efcdb73da7d9b38ede2gb6<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20160223115941
+GET:[]
+执行日期：20160223195950
+POST:[]
+执行日期：20160223195950
+GET:{"out_trade_no":"2016022337604","request_token":"requestToken","result":"success","trade_no":"2016022321001004040264229769","sign":"b028eeaaeb45268845ebd68ff574e5bc","sign_type":"MD5"}
+执行日期：20160226031837
+POST:{"service":"alipay.wap.trade.create.direct","sign":"28a10b947e1770d3bd23dc3755e69133","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2016022662587<\/subject><trade_no>2016022621001004970217728031<\/trade_no><buyer_email>18508522252<\/buyer_email><gmt_create>2016-02-26 11:18:21<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2016022662587<\/out_trade_no><notify_time>2016-02-26 11:18:36<\/notify_time><seller_id>2088021072742621<\/seller_id><trade_status>TRADE_SUCCESS<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>259.00<\/total_fee><gmt_payment>2016-02-26 11:18:36<\/gmt_payment><seller_email>finance@beyondgo.cn<\/seller_email><price>259.00<\/price><buyer_id>2088902333768973<\/buyer_id><notify_id>d9b3b8ff0774a7e1b89866e628c2f73nhi<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20160226031837
+GET:[]
+执行日期：20160226111840
+POST:[]
+执行日期：20160226111840
+GET:{"out_trade_no":"2016022662587","request_token":"requestToken","result":"success","trade_no":"2016022621001004970217728031","sign":"f2146da1a4dfa837c398e68f44d7e43b","sign_type":"MD5"}
+执行日期：20160227034813
+POST:{"service":"alipay.wap.trade.create.direct","sign":"5efd69957919efe73827a589fc827885","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2016022777158<\/subject><trade_no>2016022721001004360216771384<\/trade_no><buyer_email>18685297230<\/buyer_email><gmt_create>2016-02-27 11:47:57<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2016022777158<\/out_trade_no><notify_time>2016-02-27 11:48:13<\/notify_time><seller_id>2088021072742621<\/seller_id><trade_status>TRADE_SUCCESS<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>378.00<\/total_fee><gmt_payment>2016-02-27 11:48:13<\/gmt_payment><seller_email>finance@beyondgo.cn<\/seller_email><price>378.00<\/price><buyer_id>2088702427089362<\/buyer_id><notify_id>abae97e5337752a8b79ad21d659fc0bis2<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20160227034814
+GET:[]
+执行日期：20160227114822
+POST:[]
+执行日期：20160227114822
+GET:{"out_trade_no":"2016022777158","request_token":"requestToken","result":"success","trade_no":"2016022721001004360216771384","sign":"9712dd726ee55c0a7c229fafa4f228b3","sign_type":"MD5"}
+执行日期：20160228033028
+POST:{"service":"alipay.wap.trade.create.direct","sign":"4f768f73fb628c70d186700663f4ebaf","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2016022849229<\/subject><trade_no>2016022821001004840228535458<\/trade_no><buyer_email>18798090239<\/buyer_email><gmt_create>2016-02-28 11:29:59<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2016022849229<\/out_trade_no><notify_time>2016-02-28 11:30:28<\/notify_time><seller_id>2088021072742621<\/seller_id><trade_status>TRADE_SUCCESS<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>188.00<\/total_fee><gmt_payment>2016-02-28 11:30:27<\/gmt_payment><seller_email>finance@beyondgo.cn<\/seller_email><price>188.00<\/price><buyer_id>2088502300146849<\/buyer_id><notify_id>a2402ee3b6b0d8eba587200a698bbeamhe<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20160228033028
+GET:[]
+执行日期：20160228113048
+POST:[]
+执行日期：20160228113048
+GET:{"out_trade_no":"2016022849229","request_token":"requestToken","result":"success","trade_no":"2016022821001004840228535458","sign":"7ccc1ae9fdb102404427f01d8fe2df12","sign_type":"MD5"}
+执行日期：20160302021423
+POST:{"service":"alipay.wap.trade.create.direct","sign":"bc570d92050219ce8f24453a0490abc6","sec_id":"MD5","v":"1.0","notify_data":"<notify><payment_type>1<\/payment_type><subject>2016030249038<\/subject><trade_no>2016030221001004840237596771<\/trade_no><buyer_email>18798090239<\/buyer_email><gmt_create>2016-03-02 10:14:21<\/gmt_create><notify_type>trade_status_sync<\/notify_type><quantity>1<\/quantity><out_trade_no>2016030249038<\/out_trade_no><notify_time>2016-03-02 10:14:22<\/notify_time><seller_id>2088021072742621<\/seller_id><trade_status>TRADE_SUCCESS<\/trade_status><is_total_fee_adjust>N<\/is_total_fee_adjust><total_fee>97.00<\/total_fee><gmt_payment>2016-03-02 10:14:22<\/gmt_payment><seller_email>finance@beyondgo.cn<\/seller_email><price>97.00<\/price><buyer_id>2088502300146849<\/buyer_id><notify_id>9462eec816874e743488852eebc4413mhe<\/notify_id><use_coupon>N<\/use_coupon><\/notify>"}
+执行日期：20160302021423
+GET:[]

@@ -1,0 +1,69 @@
+{if $goods_list}
+<form name="theForm" method="post" action="">
+	{foreach from=$goods_list item=goods name=goods_list}
+	<div class="ord_list">
+      <dl class="dingdan">
+      	<dt><a href="{$goods.url}" ><img src="{$goods.goods_thumb}"></a></dt>
+        <dd>
+            <p><a href="{$goods.url}">{$goods.goods_name|truncate:60:"..."}</a></p>
+            <div class="coll_btn_box">
+                <span>{if $goods.promote_price}{$goods.promote_price}{else}{$goods.shop_price}{/if}</span>
+                <span class="add_coll_btn"><a href="javascript:addToCart({$goods.goods_id});" class="coll_btn">{$lang.add_to_cart}</a></span>
+                <font class="remove_coll_btn"><a href="user.php?act=delete_collection&collection_id={$goods.rec_id}" class="coll_btn coll_btn2">{$lang.drop}</a></font>
+            </div>
+        </dd>
+        <div class="blank5"></div><div class="blank5"></div>
+      </dl>
+	</div>
+	{/foreach}
+</form>
+{else}
+<div id="list_0_0" class="alertText font12">您还没有收藏任何商品哦！</div>
+{/if}
+{if $goods_list}{include file='library/pages.lbi'}{/if} 
+<script language="JavaScript">
+	var elements = document.forms['theForm'].elements;
+	var url = '{$url}';
+	var u   = '{$user_id}';
+	/**
+	 * 生成代码
+	 */
+	function genCode()
+	{
+			// 检查输入
+			if (isNaN(parseInt(elements['goods_num'].value)))
+			{
+					alert('{$lang.goods_num_must_be_int}');
+					return;
+			}
+			if (elements['goods_num'].value < 1)
+			{
+					alert('{$lang.goods_num_must_over_0}');
+					return;
+			}
+
+			// 生成代码
+			var code = '\<script src=\"' + url + 'goods_script.php?';
+			code += 'need_image=' + elements['need_image'].value + '&';
+			code += 'goods_num=' + elements['goods_num'].value + '&';
+			code += 'arrange=' + elements['arrange'].value + '&';
+			code += 'charset=' + elements['charset'].value + '&u=' + u;
+			code += '\"\>\</script\>';
+			elements['code'].value = code;
+			elements['code'].select();
+			if (Browser.isIE)
+          {
+              window.clipboardData.setData("Text",code);
+          }
+      }
+	var compare_no_goods = "{$lang.compare_no_goods}";
+	var btn_buy = "{$lang.btn_buy}";
+	var is_cancel = "{$lang.is_cancel}";
+	var select_spe = "{$lang.select_spe}";
+	
+	function a_ok()
+	{
+		alert('成功加入购物车');
+		alert(document.getElementById('EECS_CARTINFO1').innerHTML);
+	}
+  </script>

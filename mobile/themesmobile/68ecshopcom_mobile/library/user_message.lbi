@@ -1,0 +1,103 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- {if $action eq 'message_list'} -->
+<div class="liuyan">
+	<div id="tbh5v0">
+    	<div class="liuyan_list">
+            {if $message_list}
+            {foreach from=$message_list item=message key=key name=message_list}
+            <dl>
+                <dt class="liuyan_tit"><span class="title">{$message.msg_type}</span>{$message.msg_title} <font>{$message.msg_time}</font></dt>
+                <dd>{$item.total_fee}</dd>
+                <dd><span>{$message.msg_content}{if $message.message_img}<a href="data/feedbackimg/{$message.message_img}" target="_bank">{$lang.view_upload_file}</a>{/if}</span> <font>{$item.handler}</font></dd>
+                {if $message.re_msg_content}
+                <dt style=" margin-top:5px;"><span class="price">{$lang.shopman_reply}</span> <font>{$message.re_msg_time}</font></dt>
+                <dd><span style="color:#F60">{$message.re_msg_content}</span></dd>
+                {/if}
+                <div class="blank5"></div>
+            </dl>
+            {/foreach}
+            {include file='library/pages.lbi'}
+            {else}
+            <div id="list_0_0" class="font12">{$lang.message_empty}</div>
+            {/if}
+        </div>
+        <div class="liuyandom">
+            <section class="innercontent">
+            	<form action="user.php" method="post" enctype="multipart/form-data" name="formMsg" onSubmit="return submitMsg()">
+               		{if $order_info}
+                    <div class="form_search"> {$lang.message_type}：<a href ="{$order_info.url}">{$order_info.order_sn}</a>
+                        <input type="hidden" name="msg_type" value="5">
+                        <input type="hidden" name="order_id" value="{$order_info.order_id}">
+                    </div>
+                    {else}
+                    <div>
+                    	<h3 class="message_type_title">{$lang.message_type}<span class="message_type_btn">{$lang.type[0]}</span></h3>
+                        <div class="form_search_box">
+                        	<div class="form_search form_message_type">
+                              <h4 class="form_search_title">{$lang.message_type} <a href='javascript:;' class="message_type_close"></a></h4>
+                              <label for="msg_type0">
+                                <input type="radio" name="msg_type" value="0" checked="checked" class="radio" id="msg_type0">
+                                <span>{$lang.type[0]}</span></label>
+                              <label for="msg_type1">
+                                <input type="radio" name="msg_type" value="1" class="radio" id="msg_type1">
+                                <span>{$lang.type[1]}</span></label>
+                              <label for="msg_type2">
+                                <input type="radio" name="msg_type" value="2" class="radio" id="msg_type2">
+                                <span>{$lang.type[2]}</span></label>
+                              <label for="msg_type3">
+                                <input type="radio" name="msg_type" value="3" class="radio" id="msg_type3">
+                                <span>{$lang.type[3]}</span></label>
+                              <label for="msg_type4" style="border:0;">
+                                <input type="radio" name="msg_type" value="4" class="radio" id="msg_type4">
+                                <span>{$lang.type[4]}</span></label>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    {/if}
+                      <div class="field_else">
+                      	<label for="msg_title">
+                        <span>*</span>
+                        <input type="text" name="msg_title" id="msg_title" placeholder="{$lang.message_title}"/>
+                    	</label>
+                      </div>
+                    <div class="field_else">
+                        <label for="msg_content"> <span>*</span>
+                          <textarea name="msg_content" id="msg_content" style="height:100px;margin:0;" placeholder="{$lang.message_content}"></textarea>
+                        </label>
+                    </div>
+                    <div style=" padding-bottom:10px;">
+                        <input type="submit" value="{$lang.submit_message}" class="c_btn_oran"/>
+                    </div>
+                    <input type="hidden" name="act" value="act_add_message">
+                </form>
+            </section>
+        </div>
+    </div>
+</div>
+<script>
+$(function(){
+	$('.form_search_box').css({'width':$(window).width(),'height':$(window).height()+50});
+	$('.liuyandom .form_message_type').css({'left':($(window).width()-$(window).width()*($('.liuyandom .form_message_type').width()/100))/2,'top':($(window).height()-$('.liuyandom .form_message_type').height())/2});
+	$('.form_search label').click(function(){
+		$(this).parents('div').find('.message_type_btn').html($(this).find('span').html());
+		$('.form_search_box').hide();
+	})	
+	$('.message_type_title').click(function(){
+		$('.form_search_box').show();
+		$('.form_message_type').show();
+	})
+	$('.message_type_close').click(function(){
+		$('.form_search_box').hide();
+		$('.form_message_type').hide();		
+	})
+	$(document).on("click",function(e){ 
+		var target = $(e.target); 
+		if(target.closest(".message_type_title").length == 0 && target.closest(".form_search_title").length == 0){ 
+			$(".form_message_type").hide(); 
+			$('.form_search_box').hide();
+		} 
+	}) 
+})
+</script>
+<!-- {/if} --> 

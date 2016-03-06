@@ -1,0 +1,330 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+<title>同城快递</title>
+<link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="themesmobile/68ecshopcom_mobile/css/ecsmart.css">
+<link href="themesmobile/68ecshopcom_mobile/css/wuliu.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/My97DatePicker/WdatePicker.js"></script>
+<script type="text/javascript" src="themesmobile/68ecshopcom_mobile/js/jquery.js"></script>
+{insert_scripts files='jquery.json.js,transport.js'}
+{insert_scripts files='common.js,utils.js'}
+</head>
+<body>
+<header id="header" class='header'>
+  <h1>同城快递</h1>
+  <a href="javascript:history.back(-1)" class="back">返回</a> 
+</header>
+  <div id="tbh5v0" style="overflow:hidden">
+  <section class="innercontent">
+    <div class="wuliu_img"><a href="" target="_blank"><img src="themesmobile/68ecshopcom_mobile/img/wuliu/wl0701_1.jpg" /></a></div>
+    <div class="wuliu">
+      <div class="wuliu-right">
+        <div class="mc newmc"> <b class="wuliu_jiantou"></b>
+          <form method="POST" name="send_form" id="send_form" action="kuaidi.php"   onsubmit="return submit_kuaidi(this);">
+            <div class="wyjj_mc">
+              <div class="zoom">
+                <div class="wyjj_xx1 ovh">
+                  <h5><img src="themesmobile/68ecshopcom_mobile/img/wuliu/wl0701_2.jpg" /></h5>
+                  <dl>
+                    <dt><b>*</b>姓名：</dt>
+                    <dd>
+                      <input name="send_name" type="text" class="wyjj_input" must="must">
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt><b>*</b> 联系电话：</dt>
+                    <dd>
+                      <input name="send_tel" type="text" class="wyjj_input" value="手机/固定电话" must="must" onfocus="if (value =='手机/固定电话'){value =''}" onblur="if (value ==''){value='手机/固定电话'}">
+                      <br>
+                      <div class="msg mt5 fcf33 dsi"></div>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt><b>*</b> 地址：</dt>
+                    <dd>
+                      <select name="send_region_id" class="wyjj_input fl" >
+                        
+                    
+		  {foreach from=$district_list item=district}
+                    
+                    
+                        <option value="{$district.region_id}">{$district.region_name}</option>
+                        
+                    
+		   {/foreach}
+                  
+                  
+                      </select>
+                      <input name="send_address" type="text" class="wyjj_input fl mt15" must="must" value="例如：新北区漓江路9号"  onfocus="if (this.value =='例如：新北区漓江路9号'){this.value ='';}" onblur="if (value ==''){value='例如：新北区漓江路9号';}" >
+                    </dd>
+                  </dl>
+                </div>
+                <div class="wyjj_xx1 ovh zoom">
+                  <h5><img src="themesmobile/68ecshopcom_mobile/img/wuliu/wl0701_3.jpg" /></h5>
+                  <dl>
+                    <dt><b>*</b>姓名：</dt>
+                    <dd>
+                      <input name="to_name" type="text" class="wyjj_input" must="must">
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt><b>*</b> 联系电话：</dt>
+                    <dd>
+                      <input name="to_tel" type="text" class="wyjj_input" value="手机/固定电话" must="must" onfocus="if (value =='手机/固定电话'){value =''}" onblur="if (value ==''){value='手机/固定电话'}">
+                      <br>
+                      <div class="msg mt5 fcf33 dsi"></div>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt><b>*</b> 区域：</dt>
+                    <dd>
+                      <select name="to_region_id" class="wyjj_input fl" onchange="get_ShippingFee(document.getElementById('goods_weight_input'));">
+                        
+                    
+		  {foreach from=$district_list item=district}
+                    
+                    
+                        <option value="{$district.region_id}">{$district.region_name}</option>
+                        
+                    
+		   {/foreach}                    
+                  
+                  
+                      </select>
+                      <input name="to_address" type="text" class="wyjj_input fl mt15" must="must" value="例如：新北区漓江路9号" onfocus="if (value =='例如：新北区漓江路9号'){value =''}" onblur="if (value ==''){value='例如：新北区漓江路9号'}">
+                    </dd>
+                  </dl>
+                </div>
+              </div>
+              <div class="wyjj_xx2">
+                <h4>物品信息<span>我<lable id="no_xie" ></lable>想填写， <a href="javascript:void(0);" id="djsq"  onclick="show_Wpinfo('no_xie', 'djsq', 'wp_info')" >点击此处展开</a></span>
+                </h4>
+                <div style="display:none;" class="wl_newxx wyjj_xx3" id="wp_info">
+                  <dl>
+                    <dt><b>*</b>物品重量：</dt>
+                    <dd>
+                      <input name="goods_weight" id="goods_weight_input" type="text" value="1" class="wyjj_input wyjj_input_t"   onkeyup="this.value=this.value.replace(/[^\d^\.]/g,'');get_ShippingFee(this);" onafterpaste="this.value=this.value.replace(/[^\d^\.]/g,'')" >
+                      <span class="ml10">千克</span>
+                      <div class="msg mt5 fcf33"></div>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt><b>*</b> 种类：</dt>
+                    <dd>
+                      <select name="goods_type" class="wyjj_input" style="width:60px;">
+                        <option value="1">普通</option>
+                        <option value="2">易碎</option>
+                      </select>
+                      <input name="goods_name" type="text" class="wyjj_input ml10" value="填写物品名称" style="width:100px;" onfocus="if (value =='填写物品名称'){value =''}" onblur="if (value ==''){value='填写物品名称'}">
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt><b>*</b>包裹数量：</dt>
+                    <dd>
+                      <input name="package_num" type="text" class="wyjj_input wyjj_input_t" value="1" onkeyup="this.value=this.value.replace(/[\D]/g,'')" onafterpaste="this.value=this.value.replace(/[\D]/g,'')">
+                      <div class="msg mt5 fcf33"></div>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt>送货时间：</dt>
+                    <dd>
+                      <input name="start_time" type="text" class="Wdate wyjj_input" style="width:140px;" id="start_time"  onFocus="WdatePicker({isShowClear:false,readOnly:true, dateFmt: 'yyyy-MM-dd HH:mm:ss',})" >
+                      <span class="ml5 mr5">至</span><br/>
+                      <input name="end_time" type="text" class="Wdate wyjj_input" style="width:140px;margin-top:5px;" id="end_time" onFocus="WdatePicker({isShowClear:false,readOnly:true, dateFmt: 'yyyy-MM-dd HH:mm:ss',})" >
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt>运费计算：</dt>
+                    <dd>
+                      <input name="money" id="money" type="text" class="wyjj_input wyjj_input_t" readonly="readonly"><span class="ml5">元</span>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt>备注：</dt>
+                    <dd>
+                      <input name="remark" type="text" class="wyjj_input" value="可填写您的其他要求" onfocus="if (value =='可填写您的其他要求'){value =''}" onblur="if (value ==''){value='可填写您的其他要求'}">
+                      <br>
+                      <div style="margin-top:10px;line-height:1.5em"><span class="f12  fc99">当前仅提供<span class="fcf33"> {$shop_city_name} </span>发件服务，电话下单：400-678-0519 <span class="fcf33">[8:00-17:00下单后2小时内取件，17:00以后下单，第二日取件]</span></span></div>
+                    </dd>
+                  </dl>
+                  <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+                <div id="ta-r" class="fcf33 " style="padding-left:40px;"></div>
+                <div class="wuliu_newbtn_sub">
+                  <input type="hidden" name="country" value="{$shop_country}">
+                  <input type="hidden" name="province" value="{$shop_province}">
+                  <input type="hidden" name="city" value="{$shop_city}">
+                  <input type="hidden" name="act" value="save_kuaidi">
+                  <input type="hidden" name="yzcode" value="{$yzcode}">
+                  <input type="submit" id="submit" name="submit" class=" wuliu_newbtn" value="提交信息">
+                </div>
+                <div class="clear"></div>
+              </div>
+            </div>
+          </form>
+          <div class="clear"></div>
+        </div>
+        <div class="new_wl_1">
+          <div class="nmt">
+            <ul>
+              <li> <a href="kuaidi.php?act=query_cost"> <img src="themesmobile/68ecshopcom_mobile/img/wuliu/wl0701_5.jpg"><b>运<br>
+                费<br>
+                查<br>
+                询</b> </a> </li>
+              <li> <a href="kuaidi.php?act=query_kuaidi"> <img src="themesmobile/68ecshopcom_mobile/img/wuliu/wl0701_6.jpg"><b>寄<br>
+                件<br>
+                查<br>
+                询</b> </a> </li>
+              <li> <a href="#"> <img src="themesmobile/68ecshopcom_mobile/img/wuliu/wl0701_8.jpg"><b>在<br>
+                线<br>
+                客<br>
+                服</b> </a> </li>
+            </ul>
+            <div class="clear"></div>
+          </div>
+          <div class="wuliu_img"><img src="themesmobile/68ecshopcom_mobile/img/wuliu/wl0701_4.jpg" /></div>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div class="wuliu_img"><img src="themesmobile/68ecshopcom_mobile/img/wuliu/wl0701_9.jpg" /></div>
+  </section>
+</div>
+<!-- #BeginLibraryItem "/library/footer_nav.lbi" --><!-- #EndLibraryItem -->
+<script type="text/javascript">
+var def_address='请按照区域-详细地址格式输入，例如：新北区漓江路9号';
+function show_Wpinfo(no_xie, djsq, wp_info)
+{
+		var no_xie=document.getElementById(no_xie);
+		var djsq=document.getElementById(djsq);
+		var wp_info=document.getElementById(wp_info);
+		wp_info.style.display = wp_info.style.display == 'none' ? 'block' : 'none';
+		no_xie.innerHTML= no_xie.innerHTML == '不' ? '' : '不';
+		djsq.innerHTML= djsq.innerHTML == '点击此处展开' ? '点击此处收起' : '点击此处展开';
+}
+function submit_kuaidi(frm)
+{
+	var msg = new Array();
+	var err = false; 
+	if (frm.elements['send_name'].value == '' )
+	{
+		err = true;
+		msg.push("发件人姓名不能为空！");
+	}
+	if (frm.elements['send_tel'].value == '' || frm.elements['send_tel'].value =='手机/固定电话' )
+	{
+		err = true;
+		msg.push("发件人联系电话不能为空！");
+	}
+	else
+	{
+		var send_tel_error_1 = false;
+		var send_tel_error_2 = false;
+		var reg1 = /^((0\d{2,3})-)?(\d{7,8})(-(\d{3,}))?$/;
+		var reg2 = /^1[3458]\d{9}$/;
+		if (!reg1.test(frm.elements['send_tel'].value))
+		{
+			send_tel_error_1 = true;
+		}
+		if (!reg2.test(frm.elements['send_tel'].value))
+		{
+			send_tel_error_2 = true;
+		}
+		if (send_tel_error_1 && send_tel_error_2)
+		{
+			err = true;
+			msg.push("发件人联系电话格式不对！");
+		}
+	}
+	if (frm.elements['send_region_id'].value == '' || frm.elements['send_address'].value=='' || frm.elements['send_address'].value==def_address)
+	{
+		err = true;
+		msg.push("发件人地址信息不完整！");
+	}
+	if (frm.elements['to_name'].value == '' )
+	{
+		err = true;
+		msg.push("收件人姓名不能为空！");
+	}
+	if (frm.elements['to_tel'].value == '' || frm.elements['to_tel'].value =='手机/固定电话' )
+	{
+		err = true;
+		msg.push("收件人联系电话不能为空！");
+	}
+	else
+	{
+		var send_tel_error_1 = false;
+		var send_tel_error_2 = false;
+		var reg1 = /^((0\d{2,3})-)?(\d{7,8})(-(\d{3,}))?$/;
+		var reg2 = /^1[3458]\d{9}$/;
+		if (!reg1.test(frm.elements['to_tel'].value))
+		{
+			send_tel_error_1 = true;
+		}
+		if (!reg2.test(frm.elements['to_tel'].value))
+		{
+			send_tel_error_2 = true;
+		}
+		if (send_tel_error_1 && send_tel_error_2)
+		{
+			err = true;
+			msg.push("收件人联系电话格式不对！");
+		}
+	}
+	if (frm.elements['to_region_id'].value == '' || frm.elements['to_address'].value=='' || frm.elements['to_address'].value==def_address)
+	{
+		err = true;
+		msg.push("收件人地址信息不完整！");
+	}
+	if (frm.elements['goods_weight'].value == '' )
+	{
+		err = true;
+		msg.push("物品重量不能为空！");
+	}
+	else if(frm.elements['goods_weight'].value > 20 )
+	{
+		err = true;
+		msg.push("物品重量不能超过20千克！");
+	}
+	if (frm.elements['goods_type'].value == ''  )
+	{
+		err = true;
+		msg.push("请选择物品种类");
+	}
+	if (frm.elements['package_num'].value == ''  )
+	{
+		err = true;
+		msg.push("包裹数量不能为空");
+	}
+	
+	if (err)
+	{
+		message = msg.join("\n");
+		alert(message);
+	}
+	return ! err;
+}
+function  get_ShippingFee(theobj)
+{  
+    var sendform      = document.forms['send_form'];
+    var goods        = new Object();   
+    goods.goods_weight = theobj.value;
+    goods.country = sendform.elements['country'].value;
+    goods.province = sendform.elements['province'].value;
+    goods.city = sendform.elements['city'].value;
+    goods.district = sendform.elements['to_region_id'].value;
+    Ajax.call('kuaidi.php?act=get_shipping_fee', 'goods=' + $.toJSON(goods), get_ShippingFee_Response, 'POST', 'JSON');
+}
+function  get_ShippingFee_Response(result)
+{
+	document.getElementById('money').value=result.content;
+}
+get_ShippingFee(document.getElementById('goods_weight_input'));
+</script>
+</body>
+</html>

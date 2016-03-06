@@ -1,0 +1,2 @@
+flow.dwt找到支付宝支付按钮这里，改为
+<a href="./pay/alipayapi.php?out_trade_no={$order.order_sn}&total_fee={$total.amount_formated_wap}" class="sub-btn btnRadius">去支付宝支付</a>

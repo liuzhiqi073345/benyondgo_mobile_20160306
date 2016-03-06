@@ -1,0 +1,37 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!--#会员余额 start-->
+<!--{if $action eq "account_raply" || $action eq "account_log" || $action eq "account_deposit" || $action eq "account_detail"} -->
+<script type="text/javascript">
+	{foreach from=$lang.account_js item=item key=key}
+		var {$key} = "{$item}";
+	{/foreach}
+</script>
+<div style="background:#fff;">
+<!-- {/if}--> 
+<div class="user_login_box"><h2 class="vc_title"><em>账户余额</em><span>{$surplus_amount}</span></h2></div>
+<!-- {if $action eq "account_detail"} -->
+<!-- {if $account_log} -->
+<div class="Funds">
+  <ul>
+  <!--{foreach from=$account_log item=item name=name}-->
+    <li class="Funds_li">
+    	<span class="icon<!--{if $smarty.foreach.name.first}--> on<!--{/if}-->"></span>
+        <span>{$item.type}，<em>{$item.amount}</em></span>
+        <span>{$item.short_change_desc}</span>
+        <span>{$item.change_time}</span>
+    </li>
+  <!--{/foreach}-->
+  </ul>
+</div>
+<!-- #BeginLibraryItem "/library/pages.lbi" --><!-- #EndLibraryItem --> 
+<!-- {/if} -->
+<!-- {/if} -->
+<!--{if $action eq "account_raply" || $action eq "account_log" || $action eq "account_deposit" || $action eq "account_detail"} --> 
+</div>
+<!-- {/if} --> 
+<!--#会员余额 end--> 
+<script type="text/javascript">
+{foreach from=$lang.account_js item=item key=key}
+var {$key} = "{$item}";
+{/foreach}
+</script>

@@ -1,0 +1,216 @@
+{* TitlePicWidth: 2 *}
+{* TitlePicHeight: 38 *}
+
+{* 说明：$title_pic，分类标题图片地址； *}
+{* 说明：$base_style，基本风格样式颜色； *}
+<!DOCTYPE html >
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<title>{$page_title}</title>
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+<link rel="stylesheet" href="themesmobile/68ecshopcom_mobile/css/public.css">
+<script type="text/javascript" src="themesmobile/68ecshopcom_mobile/js/jquery.js"></script>
+{insert_scripts files='jquery.json.js,transport.js'}
+{* 包含脚本文件 *}
+{insert_scripts files='common.js'}
+<style type="text/css">
+body{
+	background:{$base_style};
+	margin:0 auto;
+}
+a:hover{color:#F52648; text-decoration:none}
+.topicwidth {
+	width: 100%;
+	overflow:hidden
+}
+.topic_con {
+	width: 100%;
+	margin: 0px auto;
+	padding: 0px;
+	background: #ffffff;
+}
+.topic_con1{background:#1DA5A1}
+.topic_con2{background:#53459C}
+.topic_con3{background:#ED6032}
+.topic_con4{background:#83B716}
+.topic_con .box {
+	width: 100%;
+	margin: 0 auto;
+}
+.topic_con .box h3.mod1tit {
+	width: 100%;
+	height:30px;line-height:30px;margin:0px auto 10px;color:#FBF300;font-size:24px;font-weight:600;border:none;vertical-align:middle;padding:10px 0px 0px;text-align:center
+}
+.topic_con h6 {
+	width:100%;
+	font-family: "黑体";
+	text-align: center;
+	height: 38px;
+	line-height: 38px;
+	font-weight: 200;
+	font-size: 18px;
+	color:{$base_style};
+	margin: 0px auto 10px;
+	background: url(../{$title_pic}) no-repeat center center;
+}
+.act-list ul{
+	overflow:hidden;	
+}
+.act-list li{
+	width: 50%;
+	padding:0 5px 10px 10px;
+	box-sizing:border-box;
+	float: left;
+	text-align: center;	
+}
+.act-list li .pro-inner{
+	background:#fff;
+	width:100%;
+	padding:4% 4% 0;
+	box-sizing:border-box;
+}
+.act-list li .pro-inner .img img{
+	width:100%;	
+}
+.act-list li .pro-inner .proTitle{
+	font-size: 12px;
+	padding: 5px;
+	color: #585858;
+	font-family: "微软雅黑";
+	height: 28px;
+	line-height: 28px;
+	overflow: hidden;
+	width: 100%;
+	text-align: left;
+	box-sizing:border-box;
+}
+.act-list li .pro-inner .proPrice{
+	color:#f23015;	
+	text-align:left;
+	box-sizing:border-box;
+	padding:5px;
+	font-size:16px;
+}
+.act-list li .pro-inner .proPrice .btns{
+	float: right;
+	height: 28px;
+	width: 28px;
+	background: #f23;
+	border-radius: 200px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 28px;
+	margin-top: 4px;	
+}
+</style>
+</head>
+<body>
+<div class="tab_nav">
+    <div class="header">
+      <div class="h-left"><a class="sb-back" href="javascript:history.back(-1)" title="返回"></a></div>
+      <div class="h-mid">{$topic.title}</div>
+      <div class="h-right">
+        <aside class="top_bar">
+          <div onClick="show_menu();$('#close_btn').addClass('hid');" id="show_more"><a href="javascript:;"></a> </div>
+        </aside>
+      </div>
+    </div>
+</div>
+<!-- #BeginLibraryItem "/library/up_menu.lbi" --><!-- #EndLibraryItem --> <!--弹出菜单-->
+{if $topic.htmls eq ''} 
+<script language="javascript">
+	var topic_width  = "100%";
+	var topic_height = "";
+	var img_url      = "../../{$topic.topic_img}";
+	
+	if (img_url.indexOf('.swf') != -1)
+	{
+		document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="'+ topic_width +'" height="'+ topic_height +'">');
+		document.write('<param name="movie" value="'+ img_url +'"><param name="quality" value="high">');
+		document.write('<param name="menu" value="false"><param name=wmode value="opaque">');
+		document.write('<embed src="'+ img_url +'" wmode="opaque" menu="false" quality="high" width="'+ topic_width +'" height="'+ topic_height +'" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" wmode="transparent"/>');
+		document.write('</object>');
+	}
+	else
+	{
+		document.write('<img class=topicwidth width="' + topic_width + '" height="' + topic_height + '" border="0" src="' + img_url + '">');
+	}
+  </script> 
+{else}
+    {$topic.htmls}
+{/if}  
+<section class="innercontent"> 
+  	<!-- {if $topic.title_pic eq ''} --> 
+    <!-- {foreach from=$sort_goods_arr item=sort key=sort_name name=sort_name} -->
+    <div class="topic_con {if $smarty.foreach.sort_name.iteration mod 4 eq 1}topic_con1{elseif $smarty.foreach.sort_name.iteration mod 4 eq 2}topic_con2{elseif $smarty.foreach.sort_name.iteration mod 4 eq 3}topic_con3{elseif $smarty.foreach.sort_name.iteration mod 4 eq 0}topic_con4{/if}">
+      <div class="box">
+        <h3 class="mod1tit"><span>{$sort_name}</span></h3>
+        <div class="act-list">
+          <ul class="clearfix">
+            <!-- {foreach from=$sort item=goods name=name} -->
+            <li <!--{if $smarty.foreach.name.iteration % 2 eq 0}-->style="padding:0 10px 10px 5px;"<!--{/if}-->>
+              <div class="pro-inner">
+              	<a href="{$goods.url}">
+                    <div class="img"> <img  src='{$goods.goods_img}'/></div>
+                    <div class="proInfo-wrap">
+                      <div class="proTitle">{$goods.goods_style_name} </div>
+                      <div class="proPrice"><!-- {if $goods.promote_price neq ""} --> 
+                        {$goods.promote_price} 
+                        <!-- {else}--> 
+                        {$goods.shop_price} 
+                        <!--{/if}-->
+                        <span class="btns">购</span>
+                      </div>
+                    </div>
+                </a>
+              </div>
+            </li>
+            <!--{/foreach}-->
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--{/foreach}--> 
+    <!-- {else} --> 
+    
+    <!-- {foreach from=$sort_goods_arr item=sort key=sort_name} -->
+    <div class="topic_con {if $smarty.foreach.sort_name.iteration mod 4 eq 1}topic_con1{elseif $smarty.foreach.sort_name.iteration mod 4 eq 2}topic_con2{elseif $smarty.foreach.sort_name.iteration mod 4 eq 3}topic_con3{elseif $smarty.foreach.sort_name.iteration mod 4 eq 0}topic_con4{/if}">
+      <div class="box">
+        <h6>{$sort_name}</h6>
+        <div class="act-list">
+          <ul class="clearfix">
+            <!-- {foreach from=$sort item=goods name=name} -->
+            <li <!--{if $smarty.foreach.name.iteration % 2 eq 0}-->style="padding:0 10px 10px 5px;"<!--{/if}-->>
+              <div class="pro-inner">
+              	<a href='{$goods.url}'>
+                    <div class="img"><img  src='{$goods.goods_img}'/></div>
+                    <div class="proInfo-wrap">
+                      <div class="proTitle">{$goods.goods_style_name}</div>
+                      <div class="proPrice"><!-- {if $goods.promote_price neq ""} --> 
+                        {$goods.promote_price} 
+                        <!-- {else}--> 
+                        {$goods.shop_price} 
+                        <!--{/if}--><span class="btns">购</span>
+                      </div>
+                    </div>
+                </a> 
+              </div>
+            </li>
+            <!--{/foreach}-->
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--{/foreach}--> 
+    <!-- {/if} --> 
+  </section>  
+<!-- #BeginLibraryItem "/library/footer_nav.lbi" --><!-- #EndLibraryItem -->  
+</body>
+</html>
+
+
+

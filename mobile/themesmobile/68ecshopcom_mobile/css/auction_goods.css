@@ -1,0 +1,116 @@
+body{ font-size: 12px;}
+/*table*/
+.tb-void { overflow: hidden; margin-right: -1px; margin-left: -1px; margin-bottom: -1px; border: 1px solid #E6E6E6; background: #fff }
+.tb-void table { border-collapse: collapse; background-color: #fff }
+.tb-void th { height: 20px; width: 60px; *width:160px;
+color: #666666; font-weight: bold; border-top: 1px #eee solid; }
+.tb-void td { border: solid #E6E6E6; border-width: 1px 0 0 1px; padding: 8px 4px; text-align: center }
+#product-intro {	display:inline-block;	width:100%;}
+#product-intro .p-img {	float: left;width:100%;margin-bottom: 10px;text-align:center;}
+#product-intro .p-img img {display: block;margin:0 auto;	width:100%;	height:auto;}
+.p-info { float: right; width: 100% }
+.p-info h1 { padding-bottom: 10px; font-size: 16px; line-height: 1.5em; overflow: hidden }
+.p-info .list-info { overflow: hidden; zoom: 1; background: #ffffff; width: 96%; padding: 0px 2%; border: 1px solid #e6e6e6; }
+.p-info .list-info p { padding: 8px 0px; }
+.p-info .list-info .list_info_d { float: left; width: 100%; }
+.p-info .list-info .list_info_s { float: left; width: 100%; }
+.p-info .list-info .list_info_d span { font-size: 16px; color: #999; font-weight: bold; }
+.p-info .list-info .f4 { color: #666666; }
+.p-info .list-info .f4 span { clear: both; color: #f23015; font-size: 16px; font-weight: bold; }
+.p-info .list-info .au_deposit { clear: both; }
+.over-time { color: #FF6600 }
+#au-key { min-height: 80px; margin-bottom: 10px }
+*html #au-key { height: 80px; }
+.a-key { background-color: #ffffff; padding: 0 0 10px; *zoom:1; overflow: hidden }
+.a-key .text { width: 164px; font-weight: bold; font-size: 14px; text-align: center; border-color: #979797 }
+.quantity-form { padding:5px 10px; height: 38px; }
+.quantity-form span{ float:left; height:32px; line-height:32px; padding-top:3px;}
+.quantity-form .ftx-03 { clear: both; text-align: center; padding-top: 3px }
+.quantity-form .inputBg { vertical-align: middle; height: 30px; line-height: 30px; border: 1px #ccc solid; padding: 0px 5px; color: #666; background: #ffffff; font-size: 12px; margin-top:3px; float:left;}
+.quantity-form .btn_blue {float:left; display: block; background-color: #FF2233; border-radius: 5px; text-align: center; height: 32px; line-height: 32px;  color: #FFF; font-size: 14px; border: none; font-family: 'Microsoft YaHei'; margin:3px 0 0 15px; padding:0 15px;}
+.quantity-form .bnt_blue1 { background: #dfdfdf; color: #999999; }
+.bnt_blue_1 { padding: 5px 10px; margin-top: 10px; background: #f23015; color: #ffffff; }
+.decrement, .increment { float: left; width: 100px; height: 34px; text-align: center; line-height: 34px; position: relative; top: 0; font-size: 20px; }
+a.decrement:hover, a.increment:hover { text-decoration: none }
+.decrement { margin-right: 5px }
+.auc-infos { clear: both; text-align: left; color: #666; height:40px; line-height:40px; cursor: pointer; padding:0 10px ;border-top: 1px solid #eeeeee; font-size:14px;  background: url(../images/jiantou1.png) no-repeat right #F2F2F2;}
+.selectt .auc-infos{background: url(../images/jiantou2.png) no-repeat right #F2F2F2;}
+.auctioninfo { display: none }
+.auctioninfo .more { text-align: right; padding-top: 10px; cursor: pointer }
+.auctioninfo .tb-void { border-top: none; margin: 0; overflow: auto; sss  width:100%;
+height: auto; overflow-y: no; overflow-x: hidden }
+.auctioninfo .tb-void td { border-left: none }
+.selectt { z-index: 2; *zoom:1 }
+.selectt .auctioninfo { display: block; width: 100% }
+.odd { background-color: #F9F9F9 }
+.tb-void table th{ height:30px; line-height:30px; font-weight:normal;}
+.tb-void table .oushu td{background:#f2f2f2;}
+.tb-void table .jishu td{background:#ffffff;}
+.icon1-tria { display: inline-block; line-height: 0; font-size: 0; height: 0; overflow: hidden; vertical-align: middle; border: 4px dashed; border-color: #005EA7 transparent transparent; border-top-style: solid }
+.selectt .icon1-tria { border: 4px dashed; border-color: transparent transparent #005EA7; border-bottom-style: solid; position: relative; top: -4px }
+.a-flex { border: 1px solid #D3D3D3; background-color: #fff; overflow: visible; clear: left; margin-top: 10px; height: 119px }
+.a-flex dt, .a-flex dd { float: left }
+.a-flex dt { overflow: hidden; text-indent: -100% }
+.flex-icon, .a-flex dt, .a-flex s, .prompt .pt { background-image: url(../images/upgrade_ad/a-flex01.png); }
+.a-flex dt { width: 107px; height: 119px; position: relative }
+.a-flex dd { position: relative; padding-left: 24px; padding-right: 36px; text-align: center; width: 158px; }
+.a-flex s { display: inline-block; width: 56px; height: 56px; margin: 17px auto 8px; cursor: pointer; *zoom:1
+}
+.a-flex .fore1 s { background-position: 0 -120px; }
+.a-flex .fore2 s { background-position: -57px -120px; }
+.a-flex .fore3 s { background-position: -114px -120px; }
+.a-flex .fore4 s { background-position: -171px -120px; }
+.a-flex .fore5 s { background-position: -228px -120px; }
+.a-flex h5 { font-weight: normal; text-align: center; background: none; padding: 0 }
+.ftx-span { font-size: 14px; font-family: "microsoft yahei"; display: block; color: #666; text-align: center; width: 150px; padding: 0px; font-weight: normal }
+.flex-icon { background-position: -258px 0; position: absolute; right: 0; top: 50px; width: 17px; height: 34px }
+.prompt { position: absolute; border: 1px solid #D3D3D3; background-color: #F6F6F6; width: 214px; top: 113px; display: none; left: 0; text-align: center; }
+.prompt .pc { padding: 5px 10px; text-align: center; }
+.prompt .pt { background-position: -258px -35px; width: 11px; height: 9px; font-size: 0; line-height: 0; overflow: hidden; position: absolute; top: -9px; left: 100px }
+.btn-bid { width: 142px; height: 37px; border: none; display: inline-block; *zoom:1;
+line-height: 100px; overflow: hidden; vertical-align: bottom; margin-right: 10px }
+.a-pinfo { padding-bottom: 45px; }
+.a-pinfo .smt { background: #ffffff; text-align: center; height: 35px; line-height: 35px; cursor: pointer; font-size: 14px; border: solid #e6e6e6; border-width: 1px 1px 0px 1px; border-bottom: 2px solid #EE2F15; }
+.a-pinfo .smt .tab { float: left }
+.a-pinfo .smt .tab li { font-weight: bold; font-size: 14px; padding: 0px 15px; cursor: pointer }
+.a-pinfo .smt .tab .curr { color: #EE2F15 }
+.a-pinfo .smt .extra { float: right; padding-right: 10px }
+.a-pinfo .smc { padding: 10px; background-color: #fff; border: solid #e6e6e6; border-width: 0 1px 1px 1px }
+.a-pinfo .smc p, .a-pinfo .smc .boxCenterList { line-height: 1.5em }
+.s-summary{	padding:10px;	background-color: #ffffff; margin: 0 5px; padding: 5px; border-radius: 5px;}
+.s-summary h1{	line-height:1.5em;	background-color: rgba(255, 255, 255, .9); padding: .1rem 0; font-weight: bold; color: #333333;font-size: 14px;}
+.s-summary .m-sales{	padding:5px 0px;border-bottom: 1px solid #f3f3f3; overflow:hidden;}
+.s-summary .m-sales .key {color: #999; float: left;}
+.s-summary .m-sales .value { overflow: hidden;color: #999;}
+.tab {width: 100%;margin-top:10px}
+.tab .tab_tit {}
+.tab .tab_tit ul {width: 100%;height: 35px;line-height: 35px;border-bottom: 2px #BCBCBC solid;}
+.tab .tab_tit ul li {float: left;text-align: center;width: 100%;height: 35px;line-height: 35px;cursor: pointer;font-size: 14px;}
+.tab .tab_tit ul li.curr {border-bottom: 2px #EE2F15 solid;color: #EE2F15;}
+.tab .tab_tit ul li a{ font-size:16px;}
+.tab .tab_tit ul li.curr a{	color: #EE2F15;}
+.tab .mc{padding:10px 2%;width:96%}
+.tab .mc img{width:100%;height:auto}
+.tab .mc .detail-list{	background:#ffffff;	border-radius:5px;	padding:3px 0px}
+.tab .mc .detail-list li{padding:5px	8px}
+.tab .mc .detail-list li a{color:#E31939}
+.detail-content{background: #fff;border-radius: 5px;padding:5px;font-size: 12px;}
+.s-summary .clear{ clear:both;}
+.c-btn-orange {
+  display: block;
+  background-color: #FF2233;
+  border-radius: 5px;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  color: #FFF;
+  font-size: 16px;
+  border: none;
+  font-family: 'Microsoft YaHei';
+}
+.c-btn-orange {
+  width: 100%;
+  height: 40px;
+  font-size: 16px;
+  font-weight: blod;
+}

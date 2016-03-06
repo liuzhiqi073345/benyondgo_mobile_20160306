@@ -1,0 +1,81 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!--#提货券 start-->
+<!--{if $action eq "tg_login"} -->
+<div class="has_tab_box user_login_box">
+    <form action="" method="post" name="valueForm" id="valueForm" onSubmit="return valueLogin()">
+    	<section class="innercontent">
+        	<dl class="tbl_type">
+                <dd class="tbl_cell">
+                  <input type="text" name="tcard"  class="inputBg" placeholder="请输入提货券号码">
+                </dd>
+            </dl>
+            <dl class="tbl_type">
+                <dd class="tbl_cell">
+                  <input type="password" name="pwd"  class="inputBg" placeholder="请输入提货券密码">
+                </dd>
+            </dl>
+            <dl class="tbl_type">
+                <input type="hidden" name="act" value="tg_login_act">
+                <input type="submit" name="submit"  class="c-btn-oran-big1" value="登录"  style="width:100%"/>
+            </dl>
+		</section>
+    </form>
+</div>
+<script type="text/javascript">
+	function valueLogin()
+	{
+	var frm = document.forms['valueForm'];
+	var vcard=frm.elements['vcard'].value;
+	var pwd = frm.elements['pwd'].value;
+	var msg = '';
+
+	if (vcard.length == 0)
+	{
+	msg +=  '卡号不能为空\n';
+	}
+	if (pwd.length == 0)
+	{
+	msg +=  '密码不能为空\n';
+	}
+
+	if (msg.length > 0)
+	{
+	alert(msg);
+	return false;
+	}
+	else
+	{
+	return true;
+	}
+	}
+	</script> 
+<!-- {/if} --> 
+
+<!-- {if $action eq 'tg_order'} -->
+<!--{if $orders}-->
+<!--{foreach from=$orders item=item name=name}-->
+<div class="general1" <!--{if $smarty.foreach.name.first}-->style="border-top:0;"<!--{/if}-->>
+	<div class="general1_header_box">
+    	<div class="general1_header">
+        	<h3>提货券号:{$item.tg_sn}</h3>
+            <p>提货时间:{$item.add_time}</p>
+        </div>
+        <div class="general1_state">{if $item.order_status eq '1'}<a href="user.php?act=tg_order_confirm&id={$item.rec_id}">{/if} <font color={if $item.order_status eq '2'}#f30{else}#00f{/if}>{$item.order_status_name}</font> {if $item.order_status eq '1'}</a>{/if}</div>
+    </div>
+    <div class="general1_address">提货地址:{$item.address}</div>
+    <div class="general1_item tbl_type">
+    	<div class="tbl_cell tbl_cell_img"><img src="../../{$item.goods_thumb}"></div>
+    	<div class="tbl_cell">
+        	<p><a href="{$item.goods_url}" class="f6">{$item.goods_name}</a></p>
+        	<p>数量：1</p>
+        </div>
+    </div>
+</div>
+<!--{/foreach}-->
+<!--{else}-->
+<div class="alertText font12">您还没提货哦！</div>
+<!--{/if}-->
+<div class="blank5"></div>
+<!-- #BeginLibraryItem "/library/pages.lbi" --><!-- #EndLibraryItem -->
+<div class="blank5"></div>
+<!-- {/if} -->

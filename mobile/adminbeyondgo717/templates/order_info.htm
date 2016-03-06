@@ -1,0 +1,854 @@
+<!-- $Id: order_info.htm 17060 2015-02-10 03:44:42Z derek $ -->
+
+{include file="pageheader_bd.htm"}
+{insert_scripts files="topbar.js,../js/utils.js,listtable.js,selectzone.js,../js/common.js"}
+{insert_scripts files="../js/transport.org.js,../js/region.js"}
+
+<script>
+function loadAddress(addressId)
+{
+	DivCenter('order_model', 'consignee', {$order.order_id}, 'address_id=' + addressId);
+}
+
+function change_inv_type(inv_type)
+{
+	var inv_type_bf = document.getElementById('inv_type_bf').value;
+	inv_type = (inv_type == 'vat_invoice' ? 'vat_invoice' : 'normal_invoice');
+	inv_type_bf = (inv_type_bf == 'vat_invoice' ? 'vat_invoice' : 'normal_invoice');
+
+	if(inv_type != inv_type_bf)
+	{
+		DivCenter('order_model', 'invoice', {$order.order_id}, 'inv_type=' + inv_type);
+	}
+}
+function change_inv_payee_type(inv_payee_type)
+{
+	var inv_type = document.getElementById('inv_type').value;
+	var inv_type_bf = document.getElementById('inv_type_bf').value;
+	inv_type = (inv_type == 'vat_invoice' ? 'vat_invoice' : 'normal_invoice');
+	inv_type_bf = (inv_type_bf == 'vat_invoice' ? 'vat_invoice' : 'normal_invoice');
+
+	DivCenter('order_model', 'invoice', {$order.order_id},'inv_type=' + inv_type + '&inv_payee_type=' + inv_payee_type);
+}
+</script>
+
+<link href='styles/order.css' rel='stylesheet' type='text/css' />
+{if $user}
+<div id="topbar">
+  <div align="right"><a href="" onclick="closebar(); return false"><img src="images/close.gif" border="0" /></a></div>
+  <table width="100%" border="0">
+    <caption>
+    <strong> {$lang.buyer_info} </strong>
+    </caption>
+    <tr>
+      <td> {$lang.email} </td>
+      <td><a href="mailto:{$user.email}">{$user.email}</a></td>
+    </tr>
+    <tr>
+      <td> {$lang.user_money} </td>
+      <td> {$user.formated_user_money} </td>
+    </tr>
+    <tr>
+      <td> {$lang.pay_points} </td>
+      <td> {$user.pay_points} </td>
+    </tr>
+    <tr>
+      <td> {$lang.rank_points} </td>
+      <td> {$user.rank_points} </td>
+    </tr>
+    <tr>
+      <td> {$lang.rank_name} </td>
+      <td> {$user.rank_name} </td>
+    </tr>
+    <tr>
+      <td> {$lang.bonus_count} </td>
+      <td> {$user.bonus_count} </td>
+    </tr>
+  </table>
+  {foreach from=$address_list item=address}
+  <table width="100%" border="0">
+    <caption>
+    <strong> {$lang.consignee} : {$address.consignee|escape} </strong>
+    </caption>
+    <tr>
+      <td> {$lang.email} </td>
+      <td><a href="mailto:{$address.email}">{$address.email}</a></td>
+    </tr>
+    <tr>
+      <td> {$lang.address} </td>
+      <td> {$address.address|escape} </td>
+    </tr>
+    <tr>
+      <td> {$lang.zipcode} </td>
+      <td> {$address.zipcode|escape} </td>
+    </tr>
+    <tr>
+      <td> {$lang.tel} </td>
+      <td> {$address.tel|escape} </td>
+    </tr>
+    <tr>
+      <td> {$lang.mobile} </td>
+      <td> {$address.mobile|escape} </td>
+    </tr>
+    <tr>
+      <td> 身份证 </td>
+      <td> {$address.id_card_num|escape} </td>
+    </tr>
+  </table>
+  {/foreach} </div>
+{/if}
+<div id="order-step" class="order-step">
+  <dl class="step-first{if $delivery_order.o_status eq $delivery_status.DO_CONFIRMED || $delivery_order.o_status eq $delivery_status.DO_PAYED || $delivery_order.o_status eq $delivery_status.DO_SHIPPED || $delivery_order.o_status eq $delivery_status.DO_SHIPPED_ING || $delivery_order.o_status eq $delivery_status.DO_SHIPPED_PART || $delivery_order.o_status eq $delivery_status.DO_FINISHED} current{/if}">
+    <dt>提交订单</dt>
+    <dd class="bg"></dd>
+    <dd class="date" title="下单时间">{$delivery_order.status_times.add_time}</dd>
+  </dl>
+  {if $delivery_order.is_cod eq 1}
+  <dl class="{if $delivery_order.o_status eq $delivery_status.DO_SHIPPED || $delivery_order.o_status eq $delivery_status.DO_SHIPPED_ING || $delivery_order.o_status eq $delivery_status.DO_SHIPPED_PART || $delivery_order.o_status eq $delivery_status.DO_FINISHED || $delivery_order.o_status eq $delivery_status.DO_PAYED}current{/if}">
+    <dt>商家发货</dt>
+    <dd class="bg"> </dd>
+    <dd class="date" title="发货时间">{$delivery_order.status_times.shipping_time}</dd>
+  </dl>
+  <dl class="{if $delivery_order.o_status eq $delivery_status.DO_PAYED || $delivery_order.o_status eq $delivery_status.DO_FINISHED}current{/if}">
+    <dt>支付订单</dt>
+    <dd class="bg"> </dd>
+    <dd class="date" title="付款时间">{$delivery_order.status_times.pay_time}</dd>
+  </dl>
+  {else}
+  <dl class="{if $delivery_order.o_status eq $delivery_status.DO_PAYED || $delivery_order.o_status eq $delivery_status.DO_SHIPPED || $delivery_order.o_status eq $delivery_status.DO_SHIPPED_ING || $delivery_order.o_status eq $delivery_status.DO_SHIPPED_PART || $delivery_order.o_status eq $delivery_status.DO_FINISHED}current{/if}">
+    <dt>支付订单</dt>
+    <dd class="bg"> </dd>
+    <dd class="date" title="付款时间">{$delivery_order.status_times.pay_time}</dd>
+  </dl>
+  <dl class="{if $delivery_order.o_status eq $delivery_status.DO_SHIPPED || $delivery_order.o_status eq $delivery_status.DO_SHIPPED_ING || $delivery_order.o_status eq $delivery_status.DO_SHIPPED_PART || $delivery_order.o_status eq $delivery_status.DO_FINISHED}current{/if}">
+    <dt>商家发货</dt>
+    <dd class="bg"> </dd>
+    <dd class="date" title="发货时间">{$delivery_order.status_times.shipping_time}</dd>
+  </dl>
+  {/if}
+  <dl class="{if $delivery_order.o_status eq $delivery_status.DO_FINISHED}current{/if}">
+    <dt>确认收货</dt>
+    <dd class="bg"> </dd>
+    <dd class="date" title="完成时间">{$delivery_order.status_times.shipping_time_end}</dd>
+  </dl>
+</div>
+<div class="order-info-con">
+<!--订单信息-->
+<div class="order-details">
+<div class="title">订单信息</div>
+<div class="content">
+<dl>
+<dt>收&nbsp;&nbsp;货&nbsp;&nbsp;人：</dt>
+<dd class="tan_info">
+	{$order.consignee} &nbsp;
+	{if $order.mobile neq ''}{$order.mobile}{else}{$order.tel}{/if} &nbsp;
+	{$order.province_format} {$order.city_format} {$order.district_format} {$order.address} &nbsp;
+	<a href="javascript:;" onclick="DivCenter('order_model','consignee',{$order.order_id})" title="编辑收货人信息" class="special">编辑</a>
+</dd>
+</dl>
+<dl>
+<dt>身份证号码：</dt>
+<!-- <dd>{foreach from=$address_list item=address}{if $address.id_card_num eq ''}无{elseif $address.id_card_num neq ' '}{$address.id_card_num}{/if}{/foreach}</dd>  -->
+<!-- <dd>{foreach from=$address_list item=address}{if $address.id_card_num eq ''}无{elseif $address.id_card_num neq ''}{$address.id_card_num}{/if}{/foreach}</dd> -->
+<dd>{$numberget}</dd>
+</dl>
+<dl>
+  <dt>支付方式：</dt>
+  <dd>{$order.pay_name}<a href="javascript:;" onclick="DivCenter('order_model','payment',{$order.order_id})" title="编辑支付方式信息" class="special">编辑</a></dd>
+</dl>
+<dl>
+  <dt>配送方式：</dt>
+  <dd>
+	{$order.shipping_name} {$order.formated_shipping_fee}
+	<a href="javascript:;" onclick="DivCenter('order_model','shipping',{$order.order_id})" title="编辑配送方式信息" class="special">编辑</a>
+	{if $delivery_order.pups_info neq ''}
+	<p class="ziti_info">自提点信息：
+		{$delivery_order.pups_info.shop_name} &nbsp;
+		{$delivery_order.pups_info.contact} &nbsp;
+		{$delivery_order.pups_info.phone} &nbsp;
+		{$delivery_order.pups_info.province}
+		{$delivery_order.pups_info.city}
+		{$delivery_order.pups_info.district}
+		{$delivery_order.pups_info.address}
+	</p>
+	{/if}
+  </dd>
+</dl>
+<dl>
+	<dt>是否保价：</dt>
+	<dd>{if $delivery_order.insure_fee eq 0}否{else}是（{$delivery_order.insure_fee}）{/if}</dd>
+</dl>
+{if (($delivery_order.is_cod eq 1 && ($delivery_order.o_status eq $delivery_status.DO_SHIPPED || $delivery_order.o_status eq $delivery_status.DO_SHIPPED_ING || $delivery_order.o_status eq $delivery_status.DO_SHIPPED_PART || $delivery_order.o_status eq $delivery_status.DO_FINISHED || $delivery_order.o_status eq $delivery_status.DO_PAYED)) || ($delivery_order.is_cod neq 1 && ($delivery_order.o_status eq $delivery_status.DO_SHIPPED || $delivery_order.o_status eq $delivery_status.DO_SHIPPED_ING || $delivery_order.o_status eq $delivery_status.DO_SHIPPED_PART || $delivery_order.o_status eq $delivery_status.DO_FINISHED))) && $delivery_order.invoice_no neq ''}
+<dl>
+  <dt>快递单号：</dt>
+  <dd>{$delivery_order.invoice_no|default:NULL} &nbsp;
+  <a href="javascript:;" onclick="DivCenter('order_model','shipping',{$order.order_id})" title="编辑快递单号信息" class="special">编辑</a></dd>
+</dl>
+{/if}
+<dl class="line">
+  <dt>订单编号：</dt>
+  <dd>{$order.order_sn}
+    <div class="more">
+      <ul>
+        {if $delivery_order.o_status eq $delivery_status.DO_CONFIRMED || $delivery_order.o_status eq $delivery_status.DO_PAYED || $delivery_order.o_status eq $delivery_status.DO_SHIPPED || $delivery_order.o_status eq $delivery_status.DO_SHIPPED_ING || $delivery_order.o_status eq $delivery_status.DO_SHIPPED_PART || $delivery_order.o_status eq $delivery_status.DO_FINISHED}
+		<li><span>{$delivery_order.status_times.add_time}</span>买家下单</li>
+		{/if}
+		{if $delivery_order.is_cod eq 1}
+		{if $delivery_order.o_status eq $delivery_status.DO_SHIPPED || $delivery_order.o_status eq $delivery_status.DO_SHIPPED_ING || $delivery_order.o_status eq $delivery_status.DO_SHIPPED_PART || $delivery_order.o_status eq $delivery_status.DO_FINISHED || $delivery_order.o_status eq $delivery_status.DO_PAYED}
+        <li><span>{$delivery_order.status_times.shipping_time}</span>商家 发出货物</li>
+		{/if}
+		{if $delivery_order.o_status eq $delivery_status.DO_PAYED || $delivery_order.o_status eq $delivery_status.DO_FINISHED}
+        <li><span>{$delivery_order.status_times.pay_time}</span>买家 支付订单</li>
+		{/if}
+		{else}
+		{if $delivery_order.o_status eq $delivery_status.DO_PAYED || $delivery_order.o_status eq $delivery_status.DO_SHIPPED || $delivery_order.o_status eq $delivery_status.DO_SHIPPED_ING || $delivery_order.o_status eq $delivery_status.DO_SHIPPED_PART || $delivery_order.o_status eq $delivery_status.DO_FINISHED}
+        <li><span>{$delivery_order.status_times.pay_time}</span>买家 支付订单</li>
+		{/if}
+		{if $delivery_order.o_status eq $delivery_status.DO_SHIPPED || $delivery_order.o_status eq $delivery_status.DO_SHIPPED_ING || $delivery_order.o_status eq $delivery_status.DO_SHIPPED_PART || $delivery_order.o_status eq $delivery_status.DO_FINISHED}
+        <li><span>{$delivery_order.status_times.shipping_time}</span>商家 发出货物</li>
+		{/if}
+		{/if}
+		{if $delivery_order.o_status eq $delivery_status.DO_FINISHED}
+        <li><span>{$delivery_order.status_times.shipping_time_end}</span>买家 签收了货物</li>
+		{/if}
+      </ul>
+    </div>
+  </dd>
+</dl>
+</div>
+</div>
+<!--订单状态-->
+<div class="order-condition">
+<form action="order.php?act=operate" method="post" name="theForm">
+  <dl>
+    <dt><i class="icon-oprate icon-oprate1"></i>订单状态：</dt>
+    <dd>{$order.order_status_format.status_format.name} {if ($delivery_order.o_status eq $delivery_status.DO_SHIPPED_PART && $order.sended_all eq 1)}(此单已全部发货){/if}</dd>
+  </dl>
+  <ul>
+    {$order.order_status_info}
+	{if ((($delivery_order.is_cod eq 1 && ($delivery_order.o_status eq $delivery_status.DO_CONFIRMED || $delivery_order.o_status eq $delivery_status.DO_SHIPPED_ING || $delivery_order.o_status eq $delivery_status.DO_SHIPPED_PART)) || ($delivery_order.is_cod neq 1 && ($delivery_order.o_status eq $delivery_status.DO_PAYED || $delivery_order.o_status eq $delivery_status.DO_SHIPPED_ING || $delivery_order.o_status eq $delivery_status.DO_SHIPPED_PART))) && $order.sended_all eq 0)}
+    <li class="one_delivery"><input type="text" id="invoice_no" name="invoice_no" class="input_te" value="请输入快递单号" onfocus="if (value =='请输入快递单号'){value =''}" onblur="if (value ==''){value='请输入快递单号'}" /><a  href="javascript:;" onclick="if (document.getElementById('invoice_no').value == '' || document.getElementById('invoice_no').value == '请输入快递单号') alert('请输入左侧快递单号'); else DivCenter('order_model','to_shipping',{$order.order_id})" title="一键发货">一键发货</a><span class="to_delivery1">一键发货：跳过以下步骤，快速发货</span></li>
+	{else}
+	<input type="hidden" id="invoice_no" name="invoice_no" value="{$order.invoice_no}" />
+	{/if}
+  </ul>
+  <div class="to_delivery">
+    {if ((($delivery_order.is_cod eq 1 && ($delivery_order.o_status eq $delivery_status.DO_CONFIRMED || $delivery_order.o_status eq $delivery_status.DO_SHIPPED_ING || $delivery_order.o_status eq $delivery_status.DO_SHIPPED_PART)) || ($delivery_order.is_cod neq 1 && ($delivery_order.o_status eq $delivery_status.DO_PAYED || $delivery_order.o_status eq $delivery_status.DO_SHIPPED_ING || $delivery_order.o_status eq $delivery_status.DO_SHIPPED_PART))) && $order.sended_all eq 0)}
+	<p>若一键发货，请忽略以下操作</p>
+	{/if}
+    <p>
+      <textarea name="action_note"  onfocus="if(value=='请输入备注信息'){value=''}" onblur="if (value ==''){value='请输入备注信息'}" >请输入备注信息</textarea>
+    </p>
+    <p class="delivery_opera">
+	{if ($delivery_order.o_status neq $delivery_status.DO_CANCELED && $delivery_order.o_status neq $delivery_status.DO_INVALID && $delivery_order.o_status neq $delivery_status.DO_FINISHED)}
+	  {if $delivery_order.is_cod eq 1}
+		{if (($delivery_order.o_status eq $delivery_status.DO_CONFIRMED || $delivery_order.o_status eq $delivery_status.DO_SHIPPED_ING || $delivery_order.o_status eq $delivery_status.DO_SHIPPED_PART) && $order.sended_all eq 0)}
+		  {if $delivery_order.o_status neq $delivery_status.DO_SHIPPED_ING}
+		  <input name="ship" type="submit" value="{$lang.op_split}" class="button" />
+		  {/if}
+		  <input name="to_delivery" type="submit" value="{$lang.op_to_delivery}" class="button"/>
+		{else}
+			{if $delivery_order.o_status eq $delivery_status.DO_PAYED}
+			  <input name="unpay" type="submit" class="button" value="{$lang.op_unpay}" />
+			  <input name="receive" type="submit" value="{$lang.op_receive}" class="button" />
+			{else}
+			  <input name="unship" type="submit" value="{$lang.op_unship}" class="button" />
+			  <input name="pay" type="submit" value="{$lang.op_pay}" class="button" />
+			{/if}
+		{/if}
+	  {else}
+		{if $delivery_order.o_status eq $delivery_status.DO_CONFIRMED}
+		  <input name="pay" type="submit" value="{$lang.op_pay}" class="button" />
+		{else}
+		  {if $delivery_order.o_status eq $delivery_status.DO_PAYED}
+			  <input name="unpay" type="submit" class="button" value="{$lang.op_unpay}" />
+			  <input name="ship" type="submit" value="{$lang.op_split}" class="button" />
+			  <input name="to_delivery" type="submit" value="{$lang.op_to_delivery}" class="button"/>
+		  {else}
+			{if ($delivery_order.o_status eq $delivery_status.DO_SHIPPED_ING || ($delivery_order.o_status eq $delivery_status.DO_SHIPPED_PART && $order.sended_all eq 0))}
+			  {if $delivery_order.o_status neq $delivery_status.DO_SHIPPED_ING}
+				<input name="ship" type="submit" value="{$lang.op_split}" class="button" />
+			  {/if}
+			  <input name="to_delivery" type="submit" value="{$lang.op_to_delivery}" class="button"/>
+			{else}
+			  <input name="unship" type="submit" value="{$lang.op_unship}" class="button" />
+			  <input name="receive" type="submit" value="{$lang.op_receive}" class="button" />
+			{/if}
+		  {/if}
+		{/if}
+	  {/if}
+	  {if  $delivery_order.o_status eq $delivery_status.DO_CONFIRMED || $delivery_order.o_status eq $delivery_status.DO_PAYED}
+      <input name="cancel" type="submit" value="{$lang.op_cancel}" class="button" />
+	  {/if}
+	  {if  $delivery_order.o_status eq $delivery_status.DO_CONFIRMED}
+      <input name="invalid" type="submit" value="{$lang.op_invalid}" class="button" />
+	  {/if}
+	{/if}
+      <input name="order_sn" type="hidden" value="{$order.order_sn}" />
+      <input name="after_service" type="submit" value="{$lang.op_after_service}" class="button" />
+      {if $operable_list.remove}
+      <input name="remove" type="submit" value="{$lang.remove}" class="button" onClick="return window.confirm('{$lang.js_languages.remove_confirm}');" />
+      {/if}
+      {if $order.extension_code eq "group_buy"}{$lang.notice_gb_ship}{/if}
+      {if $agency_list}
+      <input name="assign" type="submit" value="{$lang.op_assign}" class="button" onclick="return assignTo(document.forms['theForm'].elements['agency_id'].value)" />
+      <select name="agency_id">
+        <option value="0">{$lang.select_please}</option>
+
+        			{foreach from=$agency_list item=agency}
+
+        <option value="{$agency.agency_id}" {if $agency.agency_id eq $order.agency_id}selected{/if}>{$agency.agency_name}</option>
+
+        			{/foreach}
+
+      </select>
+      {/if}
+      <input name="order_id" type="hidden" value="{$smarty.request.order_id}">
+	</p>
+  </div>
+</form>
+</div>
+<!--发票信息-->
+<div class="order-invoice">
+  <div class="title">发票信息<a href="javascript:;" onclick="DivCenter('order_model','invoice',{$order.order_id})" class="special" {if $order.inv_type neq ""} title="编辑发票信息">编辑{else} title="添加发票信息" class="special">添加{/if}</a></div>
+  <!-- {if $order.inv_type eq ''} -->
+  <div class="content">
+  暂无信息...
+  </div>
+  <!-- {elseif $order.inv_type neq 'vat_invoice'} -->
+	<div class="content">
+	  <dl class="invoice_width">
+		<dt>发票类型：</dt>
+		<dd>普通发票</dd>
+	  </dl>
+	  <dl>
+		<dt>发票抬头：</dt>
+		<dd>{if $order.inv_payee_type eq 'unit'}单位{else}个人{/if}</dd>
+	  </dl>
+	  <dl>
+		<dd>{if $order.inv_payee_type eq 'unit'}单位名称：{$order.inv_payee}{/if}</dd>
+	  </dl>
+	  <dl class="invoice_width">
+		<dt>发票金额：</dt>
+		<dd>{$order.formatted_inv_money}</dd>
+	  </dl>
+	  <dl class="invoice_width">
+		<dt>发票内容：</dt>
+		<dd>{$order.inv_content}</dd>
+	  </dl>
+	  <dl class="invoice_width">
+		<dt>备注：</dt>
+		<dd>{$order.invoice_note}</dd>
+	  </dl>
+	</div>
+  <!-- {else} -->
+	<div class="content">
+	  <dl class="invoice_width">
+		<dt>发票类型：</dt>
+		<dd>增值税发票</dd>
+	  </dl>
+	   <dl>
+		<dt>发票内容：</dt>
+		<dd>{$order.inv_content}</dd>
+	  </dl>
+	  <dl>
+		<dt>发票金额：</dt>
+		<dd>{$order.formatted_inv_money}</dd>
+	  </dl>
+	  <dl class="invoice_width">
+		<dt>单位名称：</dt>
+		<dd>{$order.vat_inv_company_name}</dd>
+	  </dl>
+	  <dl>
+		<dt>纳税人识别号：</dt>
+		<dd>{$order.vat_inv_taxpayer_id}</dd>
+	  </dl>
+	  <dl>
+		<dt>注册地址：</dt>
+		<dd>{$order.vat_inv_registration_address}</dd>
+	  </dl>
+	  <dl>
+		<dt>注册电话：</dt>
+		<dd>{$order.vat_inv_registration_phone}</dd>
+	  </dl>
+	  <dl>
+		<dt>开户银行：</dt>
+		<dd>{$order.vat_inv_deposit_bank}</dd>
+	  </dl>
+	  <dl>
+		<dt>银行账户：</dt>
+		<dd>{$order.vat_inv_bank_account}</dd>
+	  </dl>
+	  <dl>
+		<dt>收票人姓名：</dt>
+		<dd>{$order.inv_consignee_name}</dd>
+	  </dl>
+	  <dl>
+		<dt>收票人手机：</dt>
+		<dd>{$order.inv_consignee_phone}</dd>
+	  </dl>
+	  <dl class="invoice_width">
+		<dt>收票人地址：</dt>
+		<dd>{$order.inv_complete_address}</dd>
+	  </dl>
+	  <dl class="invoice_width">
+		<dt>备注：</dt>
+		<dd>{$order.invoice_note}</dd>
+	  </dl>
+	</div>
+	<!-- {/if} -->
+</div>
+<!--其他信息-->
+<div class="order-qita">
+  <div class="title">其他信息<a href="javascript:;" onclick="DivCenter('order_model','other',{$order.order_id})" title="编辑其他信息" class="special">编辑</a></div>
+  <div class="content">
+    <dl>
+      <dt>缺货处理：</dt>
+      <dd>{$order.how_oos}</dd>
+    </dl>
+    <dl>
+      <dt>包&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;装：</dt>
+      <dd>
+	  {if $order.pack_id gt 0}
+	  {$order.pack_info.pack_name} ({$order.pack_info.format_pack_fee} 免费额度：{$order.pack_info.format_free_money})
+	  {/if}
+	  </dd>
+    </dl>
+    <dl>
+      <dt>贺&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;卡：</dt>
+      <dd>
+	  {if $order.card_id gt 0}
+	  {$order.card_info.card_name} ({$order.card_info.format_card_fee} 免费额度：{$order.card_info.format_free_money})
+	  {/if}
+	  </dd>
+    </dl>
+    <dl class="invoice_width">
+      <dt>贺卡祝福语：</dt>
+      <dd>{$order.card_message}</dd>
+    </dl>
+    <dl>
+      <dt>买家留言：</dt>
+      <dd>{$order.postscript}</dd>
+    </dl>
+    <dl>
+      <dt>商家回复：</dt>
+      <dd>{$order.to_buyer}</dd>
+    </dl>
+  </div>
+</div>
+</div>
+<!--商品列表信息-->
+<div class="order_goods_list">
+<div class="title">商品信息<a href="javascript:;" onclick="DivCenter('order_model','edit_goods',{$order.order_id})" class="special">{$lang.edit}</a></div>
+  <div id="order_info_goods">
+  <table bgcolor="#ffffff" cellpadding="5" cellspacing="0" class="order_goods_info" width="100%">
+    <tr>
+      <th width="30%">宝贝</th>
+      <th width="10%">属性</th>
+      <th width="13%">货品</th>
+      <th width="13%">货品号</th>
+      <th width="10%">单价（元）</th>
+      <th width="7%">数量</th>
+      <th width="10%">状态</th>
+      <th width="7%">库存</th>
+    </tr>
+	{foreach from=$order.goods_list item=goods_info name=goods_info}
+    <tr>
+      <td class="{if !$smarty.foreach.goods_info.last}border_bottom{/if}"><a href="../goods.php?id={$goods_info.goods_id}" title="{$goods_info.goods_name}" target="_blank" class="goods_img"><img src="../{$goods_info.goods_thumb|default:images/no_picture.gif}" alt="" width="60" height="60" /></a> <a href="../goods.php?id={$goods_info.goods_id}" title="{$goods_info.goods_name}" target="_blank" class="goods_name">{$goods_info.goods_name}</a></td>
+      <td align="center" class="{if !$smarty.foreach.goods_info.last}border_bottom{/if}">{$goods_info.goods_attr}</td>
+      <td align="center" class="{if !$smarty.foreach.goods_info.last}border_bottom{/if}">{$goods_info.goods_sn}</td>
+      <td align="center" class="{if !$smarty.foreach.goods_info.last}border_bottom{/if}">{$goods_info.product_sn}</td>
+      <td align="center" class="{if !$smarty.foreach.goods_info.last}border_bottom{/if}">{$goods_info.g_price}</td>
+      <td align="center" class="{if !$smarty.foreach.goods_info.last}border_bottom{/if}">{$goods_info.goods_number}</td>
+      <td align="center" class="{if !$smarty.foreach.goods_info.last}border_bottom{/if}">{if $goods_info.sended eq 0}待发货{elseif $goods_info.sended lt $goods_info.goods_number}部分发货(已发货{$goods_info.sended}件){elseif $goods_info.sended eq $goods_info.goods_number}已发货{/if}</td>
+      <td align="center" class="{if !$smarty.foreach.goods_info.last}border_bottom{/if}">{$goods_info.have_number}</td>
+    </tr>
+	{/foreach}
+  </table>
+  </div>
+</div>
+<!--订单费用信息-->
+<div class="list-div order_goods_fee">
+  <div class="title">订单费用信息<a href="javascript:;" onclick="DivCenter('order_model','money',{$order.order_id})" class="special">{$lang.edit}</a></div>
+  <div class="order_fee_con" id="order_info_order">
+    <table width="100%" cellpadding="3" cellspacing="0">
+      <tr>
+        <td><div align="right">{$lang.label_goods_amount}{$order.formated_goods_amount} - {$lang.label_discount}{$order.formated_discount} + {$lang.label_tax}{$order.formated_tax} + {$lang.label_shipping_fee}{$order.formated_shipping_fee} + {$lang.label_insure_fee}{$order.formated_insure_fee} + {$lang.label_pay_fee}{$order.formated_pay_fee} + {$lang.label_pack_fee}{$order.formated_pack_fee} + {$lang.label_card_fee}{$order.formated_card_fee}</div></td>
+      </tr>
+      <tr>
+        <td><div align="right"> = {$lang.label_order_amount}<strong>{$order.formated_total_fee}</strong></div></td>
+      </tr>
+      <tr>
+        <td><div align="right"> - {$lang.label_money_paid}{$order.formated_money_paid} - {$lang.label_surplus} {$order.formated_surplus} - {$lang.label_integral} {$order.formated_integral_money} - {$lang.label_bonus} {$order.formated_bonus} </div></td>
+      </tr>
+      <tr>
+        <td><div align="right"> = {if $order.order_amount >= 0}{$lang.label_money_dues}<strong>{$order.formated_order_amount}</strong> {else}{$lang.label_money_refund}<strong>{$order.formated_money_refund}</strong>
+            <input name="refund" type="button" value="{$lang.refund}" onclick="location.href='order.php?act=process&func=load_refund&anonymous={if $order.user_id <= 0}1{else}0{/if}&order_id={$order.order_id}&refund_amount={$order.money_refund}'" />
+            {/if}{if $order.extension_code eq "group_buy"}<br />
+            {$lang.notice_gb_order_amount}{/if}</div></td>
+      </tr>
+    </table>
+  </div>
+</div>
+<!--操作日志-->
+<div class="order_action_list">
+  <table bgcolor="#ffffff" cellpadding="5" cellspacing="0" class="order_action_info" width="100%">
+    <tr>
+      <th>{$lang.action_user}</th>
+      <th>{$lang.action_time}</th>
+      <th>{$lang.order_status}</th>
+      <th>{$lang.pay_status}</th>
+      <th>{$lang.shipping_status}</th>
+      <th width="20%">{$lang.action_note}</th>
+    </tr>
+    {foreach from=$action_list item=action name=action}
+    <tr>
+      <td {if !$smarty.foreach.action.last}class="border_bottom"{/if}><div align="center">{$action.action_user}</div></td>
+      <td {if !$smarty.foreach.action.last}class="border_bottom"{/if}><div align="center">{$action.action_time}</div></td>
+      <td {if !$smarty.foreach.action.last}class="border_bottom"{/if}><div align="center">{$action.order_status}</div></td>
+      <td {if !$smarty.foreach.action.last}class="border_bottom"{/if}><div align="center">{$action.pay_status}</div></td>
+      <td {if !$smarty.foreach.action.last}class="border_bottom"{/if}><div align="center">{$action.shipping_status}</div></td>
+      <td {if !$smarty.foreach.action.last}class="border_bottom"{/if}>{$action.action_note|nl2br}</td>
+    </tr>
+    {/foreach}
+  </table>
+</div>
+<!--物流跟踪-->
+{if $order.shipping_id>0 and $order.shipping_status>0}
+<div class="list-div" style="margin-bottom: 5px">
+<!-- {if $order.invoices and $order.shipping_name neq '门店自提'} -->
+<table width="100%" border="0" cellpadding="5" cellspacing="1" bgcolor="#dddddd">
+ <tr>
+    <th align="center">物流跟踪</th>
+  </tr>
+  <tr>
+    <td bgcolor="#ffffff">
+		<ul id='ul_i' class="rec-nav">
+		{foreach from=$order.invoices name=name_i item=invoice_info}
+			<li id="div_i_{$smarty.foreach.name_i.iteration}"><a href='javascript:;' onclick="get_invoice_info('{$invoice_info.shipping_name}','{$invoice_info.invoice_no}','{$smarty.foreach.name_i.iteration}')">物流{$smarty.foreach.name_i.iteration}</a></li>
+		{/foreach}
+		</ul>
+		<div id="retData"></div>
+	</td>
+  </tr>
+</table>
+<!-- {/if} -->
+</div>
+{/if}
+<div class="order_info_tan buyer_info_tan" id="order_model">
+</div>
+
+<div class="order_info_tan buyer_info_tan" id="attr_model">
+</div>
+
+<script>
+/* ********************************* *
+ * 此段script为本页控制弹窗所用js    *
+ * For order_info.htm                *
+ * ********************************* */
+
+function DivCenter(divName, type, id, others)
+{
+	var others = (typeof(others) == "undefind" ? "" : others);
+	var invoice_no = document.getElementById("invoice_no").value;
+	invoice_no = (invoice_no == "请输入快递单号" ? "" : invoice_no);
+
+	Ajax.call(
+		'order.php?act=get_div_info',
+		'div_name=' + divName + '&type=' + type + '&id=' + id + '&invoice_no=' + invoice_no +'&' + others,
+		reDivInfo,
+		'post',
+		'json'
+	);
+}
+
+function reDivInfo(result)
+{
+	var divName = "#" + result.div_infos.div_name;
+	document.getElementById(result.div_infos.div_name).innerHTML = result.content;
+
+	var top = -($(divName).height())/2 - 20;
+    var left = -($(divName).width())/2;
+    $(divName).css( {"margin-top": top , "margin-left": left } ).show();
+}
+
+function closeDiv(divName){
+	$(divName).hide();
+}
+</script>
+
+<script>
+/* ***************************** *
+ * 此段script为弹出窗口所用js    *
+ * For order_model.htm           *
+ * ***************************** */
+
+function goods_attr_div(rec_id)
+{
+	is_display = $("#goods_attr_div_"+rec_id).css('display');
+	$("#goods_attr_div_"+rec_id).hide();
+	if (is_display == "none")
+	{
+		$("#goods_attr_div_"+rec_id).animate({opacity: "show", top: "20"}, "slow");
+	}
+}
+
+function change_attr(rec_id, type)
+{
+	var attrArray = new Array();
+	var eles = document.forms['form_edit_goods_'+rec_id].elements;
+
+	for (var i=0; i<eles.length; i++)
+	{
+		if (eles[i].name.length > 0 && eles[i].value.length > 0)
+		{
+			if (eles[i].type == 'checkbox')
+			{
+				if (eles[i].checked)
+					attrArray.push(eles[i].name + '<=->' + eles[i].value);
+			}
+			else
+			{
+				attrArray.push(eles[i].name + '<=->' + eles[i].value);
+			}
+		}
+	}
+
+	Ajax.call(
+		'order.php?act=change_goods&g_type='+type+'&rec_id='+rec_id,
+		'attr='+attrArray,
+		re_change_goods,
+		'POST',
+		'JSON',
+		false
+	);
+}
+
+function change_goods(type,rec_id,val)
+{
+	vals = (type == 'number' ? 'goods_number='+val : 'goods_price='+val);
+	Ajax.call(
+		'order.php?act=change_goods&g_type='+type+'&rec_id='+rec_id,
+		vals,
+		re_change_goods,
+		'POST',
+		'JSON',
+		false
+	);
+}
+
+function re_change_goods(result)
+{
+	if (result.error.length > 0)
+	{
+		alert(result.error);
+	}
+	else
+	{
+		DivCenter('order_model', 'edit_goods', {$order.order_id});
+		re_order_info('order', {$order.order_id});
+		re_order_info('goods', {$order.order_id});
+	}
+}
+
+function del_order_goods(rec_id)
+{
+	if (confirm("您确定要删除此商品吗？"))
+	{
+		Ajax.call(
+			'order.php?act=change_goods&g_type=del&rec_id='+rec_id,
+			'',
+			re_EditGoods,
+			'POST',
+			'JSON',
+			false
+		);
+	}
+	else
+	{
+		return false;
+	}
+}
+
+function re_EditGoods(result)
+{
+	if (result.error.length > 0)
+	{
+		alert(result.error);
+	}
+	else
+	{
+		DivCenter('order_model', 'edit_goods', {$order.order_id});
+		re_order_info('order', {$order.order_id});
+		re_order_info('goods', {$order.order_id});
+	}
+}
+
+function search_goods()
+{
+	search_word = document.getElementById('search_goods_word').value;
+	DivCenter('order_model', 'edit_goods', {$order.order_id},'search='+search_word);
+}
+
+function add_goods(order_id, goods_attr_id)
+{
+	goods_id = document.getElementById('add_goods_id').value;
+	var goods_attr_id = (typeof(goods_attr_id) == "undefind" ? 0 : goods_attr_id);
+
+	if (goods_attr_id > 0)
+	{
+		var attrArray = new Array();
+		var eles = document.forms['form_goods_attr_'+goods_id].elements;
+
+		for (var i=0; i<eles.length; i++)
+		{
+			if (eles[i].name.length > 0 && eles[i].value.length > 0)
+			{
+				if (eles[i].type == 'checkbox')
+				{
+					if (eles[i].checked)
+						attrArray.push(eles[i].name+"<=->"+eles[i].value);
+				}
+				else
+				{
+					attrArray.push(eles[i].name+"<=->"+eles[i].value);
+				}
+			}
+		}
+	}
+
+	var urls = "";
+	if (goods_attr_id > 0 && attrArray.length > 0)
+	{
+		urls += '&goods_attrs='+attrArray;
+	}
+
+	Ajax.call(
+		'order.php?act=add_goods',
+		'order_id='+order_id+'&goods_id='+goods_id+urls,
+		re_add_goods,
+		'POST',
+		'JSON',
+		false
+	);
+}
+
+function re_add_goods(result)
+{
+	if (result.error.length > 0)
+	{
+		alert(result.error);
+	}
+	else if (result.error_attr > 0)
+	{
+		DivCenter('attr_model', 'goods_attr', {$order.order_id}, 'goods_id='+result.goods_id);
+	}
+	else
+	{
+		closeDiv(attr_model);
+		DivCenter('order_model', 'edit_goods', {$order.order_id});
+		re_order_info('order', {$order.order_id});
+		re_order_info('goods', {$order.order_id});
+	}
+}
+
+function re_order_info(divName, order_id)
+{
+	Ajax.call(
+		'order.php?act=get_order_info_div',
+		'div_name=' + divName + '&order_id=' + order_id,
+		function ree(result)
+		{
+			document.getElementById("order_info_" + divName).innerHTML = result.content;
+		},
+		'post',
+		'json'
+	);
+}
+
+function change_shipping_fee(filed_name, val)
+{
+	document.getElementById(filed_name).value = val;
+}
+
+function change_invoice_info(ikey)
+{
+	$("#shipping_tabs").children("li").removeClass();
+	document.getElementById("invoice_li_"+ikey).className = "shipping-selected";
+
+	$("#shipping_inputs").find("div").hide();
+	$("#invoice_info_input_"+ikey).show();
+}
+</script>
+{literal}
+<script language="JavaScript">
+{/literal}
+  var oldAgencyId = {$order.agency_id|default:0};
+{literal}
+  onload = function()
+  {
+    // 开始检查订单
+    startCheckOrder();
+  }
+
+  /**
+   * 把订单指派给某办事处
+   * @param int agencyId
+   */
+  function assignTo(agencyId)
+  {
+    if (agencyId == 0)
+    {
+      alert(pls_select_agency);
+      return false;
+    }
+    if (oldAgencyId != 0 && agencyId == oldAgencyId)
+    {
+      alert(pls_select_other_agency);
+      return false;
+    }
+    return true;
+  }
+</script>
+<script language="javascript">
+get_invoice_info('{$order.invoices.0.shipping_name}','{$order.invoices.0.invoice_no}',1);
+
+function get_invoice_info(expressid,expressno,div_id)
+{
+	expressid = expressid.replace(/(^\s*)|(\s*$)/g, "");
+	$("#ul_i").children("li").removeClass();
+	document.getElementById("div_i_"+div_id).className = 'selected';
+
+	if (expressid == "同城快递")
+	{
+		Ajax.call(
+			'order.php?act=get_tc_express',
+			'expressno =' + expressno,
+			function(data){
+				document.getElementById("retData").innerHTML='快递公司：'+expressid+' &nbsp; 运单号：'+expressno+'<br>';
+				document.getElementById("retData").innerHTML+=data;
+			},
+			'POST',
+			'JSON',
+			false
+		);
+	}
+	else
+	{
+		Ajax.call(
+			'../plugins/kuaidi100/kuaidi100_post.php?com='+ expressid+'&nu=' + expressno,
+			'showtest=showtest',
+			function(data){
+				document.getElementById("retData").innerHTML='快递公司：'+expressid+' &nbsp; 运单号：'+expressno+'<br>';
+				document.getElementById("retData").innerHTML+=data;
+			},
+			'GET',
+			'TEXT',
+			false
+		);
+	}
+}
+</script>
+{/literal}
+
+{include file="pagefooter.htm"}
